@@ -1,0 +1,32 @@
+{% load i18n %}
+<div id="contactDiv">
+	<h3> {% trans "Contact Form" %}</h3>
+	<form action="{% url contact %}" method="post" id="contactForm">
+		<div id="formInnerDiv">
+			{% csrf_token %}
+			{{ form.non_field_errors }}
+			<div class="fieldWrapper">
+				{{ form.subject.errors }}
+				<label for="id_subject"> {% trans "Subject" %} :</label>
+				{{ form.subject}}
+			</div>
+			<div class="fieldWrapper">
+				{{ form.sender.errors }}
+				<label for="id_sender"> {% trans "Sender" %} :</label>
+				{{ form.sender }}
+			</div>
+			<div class="fieldWrapper">
+				{{ form.message.errors }}
+				<label for="id_message"> {% trans "Message" %} :</label>
+				<br/>
+				{{ form.message }}
+			</div>
+			<input type='submit' value='{% trans "Send" %}' id='sendbtn'/>
+		</div>
+		<div id="thanksDiv">
+			<div id="innerThanks">
+				{% trans "Thanks !" %}
+			</div>
+		</div>
+	</form>
+</div>
