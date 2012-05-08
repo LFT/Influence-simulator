@@ -1,0 +1,540 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-05-06 03:18+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+
+#: templates/form.html:3
+msgid "Contact Form"
+msgstr "Formulaire de contact"
+
+#: templates/form.html:10
+msgid "Subject"
+msgstr "Sujet"
+
+#: templates/form.html:15
+msgid "Sender"
+msgstr "Expéditeur"
+
+#: templates/form.html:20
+msgid "Message"
+msgstr "Message"
+
+#: templates/form.html:24
+msgid "Send"
+msgstr "Envoyer"
+
+#: templates/form.html:28
+msgid "Thanks !"
+msgstr "Merci !"
+
+#: templates/influMainPage.html:5
+msgid "Elaborate your guild builds"
+msgstr "Élaborez le plan de construcion de votre guilde"
+
+#: templates/influMainPage.html:26
+msgid "Reset and enter Construction Mode"
+msgstr "Reset et entre en mode construction"
+
+#: templates/influMainPage.html:27
+msgid "Exit Construction Mode"
+msgstr "Sortie du mode construction"
+
+#: templates/influMainPage.html:28
+msgid "Reset"
+msgstr "Reset"
+
+#: templates/influMainPage.html:29
+msgid "Get a link to the current status"
+msgstr "Obtenir un lien vers ce stade de construction"
+
+#: templates/influMainPage.html:30 templates/influMainPage.html.py:110
+msgid "Output build order"
+msgstr "Afficher l'ordre de construction"
+
+#: templates/influMainPage.html:31
+msgid "FAQ"
+msgstr "FAQ"
+
+#: templates/influMainPage.html:32
+msgid "Contact"
+msgstr "Contact"
+
+#: templates/influMainPage.html:35
+msgid "Time"
+msgstr "Temps"
+
+#: templates/influMainPage.html:36
+msgid "Basic build Line"
+msgstr "Construction basique"
+
+#: templates/influMainPage.html:37
+msgid "Workshop build line"
+msgstr "Construction dans l'atelier"
+
+#: templates/influMainPage.html:38
+msgid "Asura build line"
+msgstr "Construction asurane"
+
+#: templates/influMainPage.html:39
+msgid "Influence spent for the current day"
+msgstr "Influence dépensée ce jour"
+
+#: templates/influMainPage.html:40
+msgid "Total Cost up to the current day"
+msgstr "Coût total à ce jour"
+
+#: templates/influMainPage.html:64
+msgid "Legend"
+msgstr "Légende"
+
+#: templates/influMainPage.html:66
+msgid "You can place me"
+msgstr "Je suis plaçable"
+
+#: templates/influMainPage.html:67
+msgid "Already built, can't do it again"
+msgstr "Déjà construit, inutile de le refaire"
+
+#: templates/influMainPage.html:68
+msgid "You can't use me yet"
+msgstr "Je ne suis pas plaçable acutellement"
+
+#: templates/influMainPage.html:69
+msgid "I might be deleted"
+msgstr "Je disparaitrais sans doute."
+
+#: templates/influMainPage.html:72
+msgid "I'm a permanent building"
+msgstr "Je suis un bâtiment permanent"
+
+#: templates/influMainPage.html:73
+msgid "I'm not"
+msgstr "Je ne le suis pas"
+
+#: templates/influMainPage.html:74
+msgid "You need me for that thing"
+msgstr "Je suis requis pour cela"
+
+#: templates/influMainPage.html:78
+msgid "Some side notes"
+msgstr "Quelques notes"
+
+#: templates/influMainPage.html:80
+msgid "In construction mode, you can only build permanent buildings"
+msgstr "En mode de construction, seul les bâtiments permanents sont placables"
+
+#: templates/influMainPage.html:81
+msgid ""
+"The value for levels 4 and 5 are only a guess and set to : 7500 influence / "
+"5 days and 10000 influence / 7 days"
+msgstr ""
+"Les valeurs utilisées pour les niveaux 4 et 5 sont des suppositions. Elles "
+"sont respectivement de 7500 / 5 jour et 10000 influence / 7 jours"
+
+#: templates/influMainPage.html:82
+msgid "All the datas are based on those found in the game beta and on the"
+msgstr ""
+"Toutes les données sont extraites des infos trouvables sur la bêta du jeu et "
+"sur le"
+
+#: templates/influMainPage.html:82
+msgid "Guild Wars 2 Wiki"
+msgstr "wiki de Guild Wars 2"
+
+#: templates/influMainPage.html:88
+msgid "What's the use of this website"
+msgstr "Quel est le but de ce site"
+
+#: templates/influMainPage.html:89
+msgid "It provides a simulation of the building process in Guild Wars 2"
+msgstr ""
+"Il fournit un moyen de simuler le processus de construction dans Guild Wars 2"
+
+#: templates/influMainPage.html:90
+msgid ""
+"It gives players a way to quickly estimate what is the best thing for them "
+"to build. And what will they need to spend in order to do so"
+msgstr ""
+"Les joueurs ont ainsi un moyen d'estimer rapidement quels sont les meilleurs "
+"bâtiments à construire pour répondre à leurs besoins. Et de savoir ce que "
+"cela leur en coûtera"
+
+#: templates/influMainPage.html:93
+#, fuzzy
+msgid "Why does nothing works"
+msgstr "Comment ça marche"
+
+#: templates/influMainPage.html:94
+msgid ""
+"Probably because your browser does not allow javascript or is to old (it's "
+"tested on firefox and chrome only)"
+msgstr ""
+
+#: templates/influMainPage.html:97
+msgid "How does that work"
+msgstr "Comment ça marche"
+
+#: templates/influMainPage.html:98
+msgid "There are two kind of buildings"
+msgstr "Il y a deux types de bâtiments"
+
+#: templates/influMainPage.html:98
+msgid "permanent"
+msgstr "les permanents"
+
+#: templates/influMainPage.html:98 templates/influMainPage.html.py:130
+msgid "and"
+msgstr "et"
+
+#: templates/influMainPage.html:98
+msgid "temporary"
+msgstr "les temporaires"
+
+#: templates/influMainPage.html:99
+msgid ""
+"The difference between the two is quite easy to get. Once built, the "
+"permanent will be there until deletion. The temporary will be there once and "
+"will be available again when the need arise"
+msgstr ""
+"La différence entre les deux types est assez simple à comprendre. Une fois "
+"construit, les permanents le seront jusqu'à suppression. Les temporaires "
+"seront placés une fois et seront encore disponibles pour l'être à nouveau"
+
+#: templates/influMainPage.html:100
+msgid ""
+"A building that you can place has a black background. A permanent and "
+"constructed building will be grey"
+msgstr ""
+"Un bâtiment que vous pouvez construire à un fond noir. Un bâtiment permanent "
+"et construit aura un fond gris"
+
+#: templates/influMainPage.html:101
+msgid ""
+"If you hover over a building with a blue background, you'll see what are the"
+msgstr ""
+"Si vous passez votre souris au dessus d'un bâtiment avec un fond bleu, vous "
+"verrez quels sont ses"
+
+#: templates/influMainPage.html:101
+msgid "prerequisite"
+msgstr "prérequis"
+
+#: templates/influMainPage.html:102
+msgid ""
+"Any building on the build list can be deleted through the click of the red "
+"cross in the top right corner"
+msgstr ""
+"Tout les bâtiments présent dans une ligne de construction peut être supprimé "
+"via un clic sur la croix rouge située dans le coin en haut à droite"
+
+#: templates/influMainPage.html:105
+msgid "What's 'Construction mode'"
+msgstr "Que représente le 'mode construction'"
+
+#: templates/influMainPage.html:106
+msgid ""
+"This mode allows you to put some permanent batiment in a 'already built' "
+"mode. This way, you won't have to place them on the list to access their "
+"children"
+msgstr ""
+"Ce mode permet de préconstruire certains bâtiments. Ils seront marqués comme "
+"construits et vous n'aurez pas à les placer sur une liste pour construire "
+"leurs enfants"
+
+#: templates/influMainPage.html:107
+msgid ""
+"In construction mode, you don't need to build buildings one at a time. You "
+"can click on all the permanent buildings and all their ancestors are going "
+"to be build as well"
+msgstr ""
+"En mode construction, il n'est pas nécessaire de construire les bâtiments un "
+"par un. Vous pouvez cliquer sur chacun des bâtiments permanents et tout "
+"leurs ancêtres seront alors construit"
+
+#: templates/influMainPage.html:110
+msgid "What's represented through"
+msgstr "Quel est le sens de la sortie du bouton"
+
+#: templates/influMainPage.html:111
+msgid ""
+"It's the order you'll have to put the building in if you only have one list "
+"to put all the buildings"
+msgstr ""
+"Cela représente l'ordre dans lequel les bâtiments devront être mis si il y a "
+"une seule file d'attente"
+
+#: templates/influMainPage.html:114
+msgid "How does the deletion work"
+msgstr "Comment marche la suppression"
+
+#: templates/influMainPage.html:115
+msgid ""
+"It shows you the elements that are going to be deleted if you click on the "
+"cross. To get that it proceeds to a simulation of the following"
+msgstr ""
+"Le survol de la croix vous montre les bâtiments qui seront supprimés si "
+"jamais vous cliquez. Pour obtenir ces derniers, il procède de la façon "
+"suivante"
+
+#: templates/influMainPage.html:117
+msgid "It suppress the building you have your pointer over"
+msgstr "Simulation de la suppression du bâtiment que vous survolez"
+
+#: templates/influMainPage.html:118
+msgid "And then it removes all it's children if it has some"
+msgstr "S'ensuit la suppression de tout ses enfants, si il en a"
+
+#: templates/influMainPage.html:119
+msgid ""
+"After that it'll move all the element to the left to close the gaps and "
+"check for all the possible new mistakes (e.g. children built before their "
+"parent)"
+msgstr ""
+"Après cela, tout les éléments restant sont déplacés vers la gauche pour "
+"combler les trous et toutes les erreurs possibles entrainent des "
+"suppressions (par ex. des enfants commencés avant la fin de leur parent)"
+
+#: templates/influMainPage.html:120
+msgid "And it'll do that until it's good"
+msgstr "Et cela est répété jusqu'à ce que la situation soit réalisable"
+
+#: templates/influMainPage.html:124
+msgid ""
+"I have some ideas/remarks/bugs or I'm not happy with some behavior. What do "
+"I do"
+msgstr ""
+"J'ai quelques idées/remarques/bugs ou bien je ne suis pas satisfait du "
+"comportement du site. Que fais-je"
+
+#: templates/influMainPage.html:125
+msgid "Just use the contact form, it's here for that"
+msgstr "Utilisez le formulaire de contact, il est là pour ça"
+
+#: templates/influMainPage.html:126
+msgid ""
+" Also note that I'm doing that for free, on my spare time. Hence I might not "
+"answer (or correct the bugs) quickly"
+msgstr ""
+"Petite remarque, je fais cela gratuitement et sur mon temps libre. De ce "
+"fait, il est possible que je ne réponde pas rapidement"
+
+#: templates/influMainPage.html:129
+msgid "What are you using to run this website"
+msgstr "Qu'est ce que tu utilises pour faire tourner ce site"
+
+#: templates/influMainPage.html:130
+msgid "It's powered by"
+msgstr "Cela marche grâce à"
+
+#: templates/influMainPage.html:133
+msgid "What language are available"
+msgstr "Dans quelles langues ce site est il disponible"
+
+#: templates/influMainPage.html:134
+msgid "So far, only english and french. And that rely on your browser's locale"
+msgstr ""
+"À ce jour, seulement anglais et français. Et la langue choisie est "
+"déterminée par les réglages du navigateur."
+
+#: templates/influMainPage.html:135
+msgid ""
+"You're welcome if you want to provide another language translation. I can "
+"provide easily a list of sentence to be translated"
+msgstr ""
+"Si vous vouliez traduire ce site dans un autre langage, vous êtes les "
+"bienvenus. Je peux aisément produire une liste des phrases à traduire."
+
+#~ msgid ""
+#~ "The value for guild emblem template is also a guess: 200 influence / 1 day"
+#~ msgstr ""
+#~ "La valeur du modèle d'emblème de guilde est aussi une supposition: 200 "
+#~ "influence / 1 jour"
+
+# ############################# 
+msgid "+5% Influence for 24h"
+msgstr "+5% d'Influence pour 24h"
+
+msgid "Guild Emblem Template"
+msgstr "Modèle d'emblème de guilde"
+
+msgid "+10% Influence from Events"
+msgstr "+10% d'Influence pour les Événements"
+
+msgid "+5% Exp Public Banner"
+msgstr "Bannière Publique +5% d'Exp"
+
+msgid "Guild Armorer Contract"
+msgstr "Contrat d'armurier de Guilde"
+
+msgid "Guild Weapons Contract"
+msgstr "Contrat d'armes de Guilde"
+
+msgid "Contract Asuran Outsourcing"
+msgstr "Contrat de sous-traintance Asura"
+
+msgid "+20% Dungeon Influence for 24 Hrs"
+msgstr "+20% d'Influence des Donjons sur 24h"
+
+msgid "Guild Banquet"
+msgstr "Banquet de Guilde"
+
+msgid "+10% Influence for 3 Days"
+msgstr "+10% d'Influence pour 3 jours"
+
+msgid "WvW Fort +10% Experience"
+msgstr "McM Fort +10% d'Expérience"
+
+msgid "WvW Fort +10% Magic Find"
+msgstr "McM Fort +10% Découverte de Magie"
+
+msgid "WvW Fort +5 Supply"
+msgstr "McM Fort +5 en Ravitaillement"
+
+msgid "WvW Fort +5 Karma"
+msgstr "McM Fort +5 en Karma"
+
+msgid "WvW Fort +40 Vitality"
+msgstr "McM Fort +40 en Vitalité"
+
+msgid "WvW Fort +40 Toughness"
+msgstr "McM Fort +40 en Robustesse"
+
+msgid "WvW Fort +40 Power"
+msgstr "McM Fort +40 en Puissance"
+
+msgid "WvW Fort +40 Precision"
+msgstr "McM Fort +40 en Précision"
+
+msgid "WvW Fort +10% Healing"
+msgstr "McM Fort +10% en Guérison"
+
+msgid "WvW Fort +10% Player Health"
+msgstr "McM Fort +10% à la vie du Joueur"
+
+msgid "Guild Catapult"
+msgstr "Catapulte de Guilde"
+
+msgid "WvW Fort +5% Swiftness"
+msgstr "McM Fort +5% Rapidité"
+
+msgid "Guild Siege Suit"
+msgstr "Habit de siège de la guilde"
+
+msgid "+5% Karma from Events for 3 Days"
+msgstr "5% Karma des Événements sur 3 jours"
+
+msgid "+5% Exp from Events for 3 Days"
+msgstr "+5% Exp des Événements sur 3 jours"
+
+msgid "+10% Magic Find for 3 Days"
+msgstr "+10% Découverte de Magie sur 3 jours"
+
+msgid "+10% Gathering Bonus for 3 Days"
+msgstr "+10% bonus pour la Récolte sur 3 jours"
+
+msgid "+15% Karma from Events for 24 Hours"
+msgstr "+15% Karma des Événements sur 24h"
+
+msgid "Guild Workshop"
+msgstr "Atelier de Guilde"
+
+msgid "Guild Vault"
+msgstr "Caisse de la Guilde"
+
+msgid "Guild Treasure Trove"
+msgstr "Trésor de la Guilde"
+
+msgid "Deep Cave"
+msgstr "Grotte profonde"
+
+# ##############################
+msgid "Politics"
+msgstr "Politique"
+
+msgid "Art Of War"
+msgstr "Art de la Guerre"
+
+msgid "Economy"
+msgstr "Economie"
+
+msgid "Architecture"
+msgstr "Architecture"
+
+# ##############################
+msgid "Politics Level 1"
+msgstr "Politique Niveau 1"
+
+msgid "Art Of War Level 1"
+msgstr "Art de la Guerre Niveau 1"
+
+msgid "Economy Level 1"
+msgstr "Economie Niveau 1"
+
+msgid "Architecture Level 1"
+msgstr "Architecture Niveau 1"
+
+# ##############################
+msgid "Politics Level 2"
+msgstr "Politique Niveau 2"
+
+msgid "Art Of War Level 2"
+msgstr "Art de la Guerre Niveau 2"
+
+msgid "Economy Level 2"
+msgstr "Economie Niveau 2"
+
+msgid "Architecture Level 2"
+msgstr "Architecture Niveau 2"
+
+# ##############################
+msgid "Politics Level 3"
+msgstr "Politique Niveau 3"
+
+msgid "Art Of War Level 3"
+msgstr "Art de la Guerre Niveau 3"
+
+msgid "Economy Level 3"
+msgstr "Economie Niveau 3"
+
+msgid "Architecture Level 3"
+msgstr "Architecture Niveau 3"
+
+# ##############################
+msgid "Politics Level 4"
+msgstr "Politique Niveau 4"
+
+msgid "Art Of War Level 4"
+msgstr "Art de la Guerre Niveau 4"
+
+msgid "Economy Level 4"
+msgstr "Economie Niveau 4"
+
+msgid "Architecture Level 4"
+msgstr "Architecture Niveau 4"
+
+# ##############################
+msgid "Politics Level 5"
+msgstr "Politique Niveau 5"
+
+msgid "Art Of War Level 5"
+msgstr "Art de la Guerre Niveau 5"
+
+msgid "Economy Level 5"
+msgstr "Economie Niveau 5"
+
+msgid "Architecture Level 5"
+msgstr "Architecture Niveau 5"
