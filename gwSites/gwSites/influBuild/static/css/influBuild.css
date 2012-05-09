@@ -176,8 +176,8 @@ body{
 #buildingContent .family{
 	position:static;
 	overflow:visible;
-	padding-left: 1%;
-	padding-right: 1%;
+	padding-left:1%;
+	padding-right:1%;
 }
 .acc_header {
 	text-align:left;
