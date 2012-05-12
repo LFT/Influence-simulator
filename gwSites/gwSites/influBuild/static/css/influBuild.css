@@ -311,3 +311,17 @@ body{
 		background-position:right;
 	}
 }
+
+#buildTooltip {
+	position:absolute;
+	display:none;
+	text-align:center;
+	height:20px;
+	line-height:20px;
+	padding:5px 10px;
+	border: 1px solid black;
+	background-color: white;
+	border-radius:5px;
+	font-size: 1.1em;
+	font-family: Arial,sans-serif;
+}

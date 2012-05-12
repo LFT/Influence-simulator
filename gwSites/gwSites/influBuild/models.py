@@ -11,6 +11,7 @@ class Building(models.Model):
 	family = models.CharField(max_length=30)
 	parent = models.ForeignKey('self', blank = True, null = True, related_name = '%(app_label)s_%(class)s_descendant')
 	otherDep = models.ForeignKey('self', blank = True, null = True, related_name = '%(app_label)s_%(class)s_otherDesc')
+	completeDescr = models.CharField(max_length=200)
 	
 	def __unicode__(self):
 		return u'%s' % (self.shortName)
