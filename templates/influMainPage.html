@@ -16,7 +16,7 @@
 	<script type="text/javascript">
 		var listBuilds={{% for fam, builds in listFam.items %}
 			 '{{ fam|slice:":3" }}' : { 
-			{% for build in builds %}	 '{{ build.shortName }}' : new building('{% trans build.name %}','{{build.parent|default_if_none:""}}', '{{build.otherDep|default_if_none:""}}', {{build.cost}}, {{build.timeToBuild}}, [{% for indirectChilds in build.influbuild_building_otherDesc.values %} '{{indirectChilds.shortName}}',{% endfor %}]),
+			{% for build in builds %}	 '{{ build.shortName }}' : new building('{% trans build.name %}','{{build.parent|default_if_none:""}}', '{{build.otherDep|default_if_none:""}}', {{build.cost}}, {{build.timeToBuild}}, [{% for indirectChilds in build.influbuild_building_otherDesc.values %} '{{indirectChilds.shortName}}',{% endfor %}],"{{build.completeDescr}}"),
 			{% endfor %}	},{% endfor %}
 		};
 		var oNs = { {% for fam, builds in listFam.items %}'{{fam|slice:":3"}}':'{{fam|slice:"2:3"}}',{% endfor %} };
@@ -140,6 +140,8 @@
 	</ol>
 </div>
 
+<div id="buildTooltip">
+</div>
 {% include "form.html" %}
 
 </body>{% endspaceless %}

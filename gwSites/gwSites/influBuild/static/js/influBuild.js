@@ -7,19 +7,21 @@ var iBV = {
 	'cm': false,
 	'tc': 25,
 	'cpDialog': null,
-	'lm': false
+	'lm': false,
+	'tooltipTO': null
 	/*'moveInt':null, */
 };
 /* ****** */
 /* object */
 /* ****** */
-function building(name, parent, otherParent, cost, time, indirectChilds) {
+function building(name, parent, otherParent, cost, time, indirectChilds, descr) {
 	this.name = name;
 	this.parent = parent;
 	this.otherParent = otherParent;
 	this.cost = cost;
 	this.time = time;
 	this.indirectChilds = indirectChilds;
+	this.descr = descr;
 	this.endTime = 0;
 	this.delStartTime = 0;
 	this.myDiv = null;
@@ -195,21 +197,27 @@ $(function () {
 		"revert": true,
 		"zIndex": 101,
 		"revertDuration": 0,
-		"start": function (event, ui) {
+		"start": function () {
 			iBV.currentObj = listBuilds[this.parentNode.parentNode.id][this.id];
 			$(".enabledList").append("<div class='time" + iBV.currentObj.time + " tempBuild'><span class='styler'>&nbsp;</span></div>");
 		},
-		"stop": function (event, ui) {
+		"stop": function () {
 			$(".tempBuild").remove();
 		}
 	});
 	/* Prereq on enter */
-	$(".cellFam").on("mouseenter", function () {
+	$(".cellFam").on("mouseenter", function (event) {
+		var build = getItem($(this)[0].id, false);
 		if (!$(this).hasClass("inUse")) {
-			highLightRec(getItem($(this)[0].id, false), true);
+			highLightRec(build, true);
 		}
+		iBV.tooltipTO = setTimeout(function () {
+			build.showTooltip(event);
+		}, 750);
 	});
 	$(".cellFam").on("mouseleave", function () {
+		clearTimeout(iBV.tooltipTO);
+		$("#buildTooltip").hide();
 		if ($(this).hasClass("preReq")) {
 			highLightRec(getItem($(this)[0].id, false), false);
 		}
@@ -308,7 +316,7 @@ $(function () {
 		$("#thanksDiv").hide();
 		$("#formInnerDiv").show();
 		$(".errorlist").remove();
-		$(".fieldWrapper > :last-child").each(function (elt) {
+		$(".fieldWrapper > :last-child").each(function () {
 			this.value = "";
 		});
 		$("#contactDiv").dialog("open");
@@ -324,7 +332,7 @@ $(function () {
 
 /*transforms all the id in parent/otherParent into objects and initialise myDiv*/
 function initObjects() {
-	var fam, fam2, build, currentBuild;
+	var fam, build, currentBuild;
 	for (fam in listBuilds) {
 		for (build in listBuilds[fam]) {
 			currentBuild = listBuilds[fam][build];
@@ -375,8 +383,8 @@ function initDrop(dropTr) {
 	dropTr.droppable({
 		accept : '.cellFam',
 		activeClass: "ui-state-hover",
-		drop : function (event, ui) {
-			var index = parseInt(this.id.substr(-1), 10), i, emptyList, otherP, myFam, currentDay, currentP, time;
+		drop : function () {
+			var index = parseInt(this.id.substr(-1), 10), otherP, currentP, time;
 			/* watching for order ! */
 			currentP = iBV.currentObj.parent;
 			if (currentP !== "" && currentP.endTime > iBV.lineTime[index]) {
@@ -607,7 +615,7 @@ function deleteMeAnChildren(eltToDel, delFamily) {
 }
 
 function createIncoherentLine(elts) {
-	var line = [], time = 0, id, item;
+	var line = [], time = 0, item;
 	elts.each(function () {
 		if (!$(this).hasClass("mightDel")) {
 			if (this.id !== "") {
@@ -631,7 +639,7 @@ function createIncoherentLine(elts) {
 }
 
 function createIncoherentAsuranLine(elts) {
-	var line = [], time = 0, id, item;
+	var line = [], time = 0, item;
 	elts.each(function (index) {
 		if (!$(this).hasClass("mightDel")) {
 			if (extractDisplayId(this.id) === "Pol32") {
@@ -650,7 +658,7 @@ function createIncoherentAsuranLine(elts) {
 
 /* no need if only line1 !*/
 function deleteIncoherentTime() {
-	var line0, line1 = [], line2 = [], isOk = true, i = 0, j = 0, k = 0, it0, it1, it2, smaller, smallTime, parent, otherP;
+	var line0, line1 = [], line2 = [], isOk = true, i = 0, j = 0, k = 0, it0, it1, it2, smaller, parent, otherP;
 	line0 = createIncoherentLine($("#buildList0").children().slice(1));
 	if ($("#buildList1").hasClass('enabledList')) {
 		line1 = createIncoherentLine($("#buildList1").children().slice(1));
@@ -729,7 +737,7 @@ function generateLineOut(lineIndex) {
 }
 
 function generateLineIn(inStr, lineIndex) {
-	var l, ar, re = /([colts])(\d+)/g, item,
+	var ar, re = /([colts])(\d+)/g, item,
 		line = $("#buildList" + lineIndex);
 	iBV.lineTime[lineIndex] = 0;
 	while ((ar = re.exec(inStr)) !== null) {
@@ -831,7 +839,7 @@ function handleContact() {
 		$("#sendbtn").attr("disabled", true);
 		$("#formInnerDiv").load(form.attr("action") + " #formInnerDiv",
 			form.serializeArray(),
-			function (responseText, responseStatus, xhr) {
+			function (responseText) {
 				if (responseText.indexOf('class="errorlist"') === -1) {
 					$("#thanksDiv").show();
 					$("#formInnerDiv").hide();
@@ -842,3 +850,26 @@ function handleContact() {
 		e.preventDefault();
 	});
 }
+
+/* ******* */
+/* tooltip */
+/* ******* */
+building.prototype.showTooltip = function (event) {
+	$("#buildTooltip").html(this.descr);
+	var rigthVal, leftVal, 
+		docWid= $(document).width(),
+		pos = $(event.target).offset();
+	if (pos.left > docWid / 2){
+		rigthVal = (docWid - pos.left - 225) + "px";
+		leftVal = "auto";
+	} else {
+		rigthVal = "auto";
+		leftVal = (pos.left + 5) + "px";
+	}
+	$("#buildTooltip").css({
+		"top": (pos.top - $(event.target).height() - 15) + "px",
+		"left": leftVal,
+		"right": rigthVal
+	});
+	$("#buildTooltip").show();
+};
