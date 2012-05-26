@@ -176,8 +176,8 @@ body{
 #buildingContent .family{
 	position:static;
 	overflow:visible;
-	padding-left:1%;
-	padding-right:1%;
+	padding-left:5px;
+	padding-right:5px;
 }
 .acc_header {
 	text-align:left;
@@ -318,10 +318,15 @@ body{
 	text-align:center;
 	height:20px;
 	line-height:20px;
+	white-space: nowrap;
+}
+
+#innerTooltip{
 	padding:5px 10px;
 	border: 1px solid black;
 	background-color: white;
 	border-radius:5px;
 	font-size: 1.1em;
 	font-family: Arial,sans-serif;
+	width:100%;
 }

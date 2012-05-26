@@ -855,21 +855,12 @@ function handleContact() {
 /* tooltip */
 /* ******* */
 building.prototype.showTooltip = function (event) {
-	$("#buildTooltip").html(this.descr);
-	var rigthVal, leftVal, 
-		docWid= $(document).width(),
-		pos = $(event.target).offset();
-	if (pos.left > docWid / 2){
-		rigthVal = (docWid - pos.left - 225) + "px";
-		leftVal = "auto";
-	} else {
-		rigthVal = "auto";
-		leftVal = (pos.left + 5) + "px";
-	}
+	$("#innerTooltip").html(this.descr);
+	$("#innerTooltip").css("margin-left", ((this.myDiv[0].id.match(/(\d)\d?/)[1] - 1) * -16.6) + "%");
+	var pos = $(event.target).offset();
 	$("#buildTooltip").css({
 		"top": (pos.top - $(event.target).height() - 15) + "px",
-		"left": leftVal,
-		"right": rigthVal
+		"left": (pos.left + 5) + "px"
 	});
 	$("#buildTooltip").show();
 };

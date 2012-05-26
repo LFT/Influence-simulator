@@ -4,19 +4,19 @@
 {% load compressed %}
 <head>
 	<title>{% trans "Elaborate your guild builds" %}</title>
+	<link type="text/css"  href="{{ STATIC_URL }}css/blitzer/jquery-ui-1.8.20.custom.css" rel="stylesheet"/>
+	{% compressed_css 'influCSS' %}
 	<script type="text/javascript" src="{{ STATIC_URL }}js/jquery-1.7.2.min.js"></script>
 	<script type="text/javascript" src="{{ STATIC_URL }}js/jquery-ui-1.8.20.custom.min.js"></script>
-	<link type="text/css"  href="{{ STATIC_URL }}css/blitzer/jquery-ui-1.8.20.custom.css" rel="stylesheet"/>
 	{% comment %}
 	<link type="text/css"  href="{{ STATIC_URL }}css/influBuild.css" rel="stylesheet"/>
 	<script type="text/javascript" src="{{ STATIC_URL }}js/influBuild.js"></script>
 	{% endcomment %}
-	{% compressed_css 'influCSS' %}
 	{% compressed_js 'influJS' %}
 	<script type="text/javascript">
 		var listBuilds={{% for fam, builds in listFam.items %}
 			 '{{ fam|slice:":3" }}' : { 
-			{% for build in builds %}	 '{{ build.shortName }}' : new building('{% trans build.name %}','{{build.parent|default_if_none:""}}', '{{build.otherDep|default_if_none:""}}', {{build.cost}}, {{build.timeToBuild}}, [{% for indirectChilds in build.influbuild_building_otherDesc.values %} '{{indirectChilds.shortName}}',{% endfor %}],"{{build.completeDescr}}"),
+			{% for build in builds %}	 '{{ build.shortName }}' : new building('{% trans build.name %}','{{build.parent|default_if_none:""}}', '{{build.otherDep|default_if_none:""}}', {{build.cost}}, {{build.timeToBuild}}, [{% for indirectChilds in build.influbuild_building_otherDesc.values %} '{{indirectChilds.shortName}}',{% endfor %}],"{% trans build.completeDescr %}"),
 			{% endfor %}	},{% endfor %}
 		};
 		var oNs = { {% for fam, builds in listFam.items %}'{{fam|slice:":3"}}':'{{fam|slice:"2:3"}}',{% endfor %} };
@@ -124,6 +124,10 @@
 			</ul>
 		</li>
 		<li>
+			<b>{% trans "What about the building speeding process" %}?</b>
+			<br/>{% trans "Yet, I have no idea whatsoever on the way it works in game" %}.
+		</li>
+		<li>
 			<b>{% trans "I have some ideas/remarks/bugs or I'm not happy with some behavior. What do I do" %}?</b>
 			<br/> {% trans "Just use the contact form, it's here for that" %}.
 			<br/> {% trans " Also note that I'm doing that for free, on my spare time. Hence I might not answer (or correct the bugs) quickly" %}.
@@ -141,6 +145,8 @@
 </div>
 
 <div id="buildTooltip">
+	<div id="innerTooltip">
+	</div>
 </div>
 {% include "form.html" %}
 
