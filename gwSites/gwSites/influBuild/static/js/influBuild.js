@@ -190,10 +190,12 @@ function resetDADAsuranLine() {
 /* init */
 /* **** */
 $(function () {
+	var buildListDiv = $("#influBuildList"),
+		cellFams = $(".cellFam");
 	initObjects();
 	listBuilds.Pol.Pol32.endTimes = [];
 	listBuilds.Pol.Pol32.endTimesPos = [];
-	$(".cellFam").draggable({
+	cellFams.draggable({
 		"revert": true,
 		"zIndex": 101,
 		"revertDuration": 0,
@@ -206,7 +208,7 @@ $(function () {
 		}
 	});
 	/* Prereq on enter */
-	$(".cellFam").on("mouseenter", function (event) {
+	cellFams.on("mouseenter", function (event) {
 		var build = getItem($(this)[0].id, false);
 		if (!$(this).hasClass("inUse")) {
 			highLightRec(build, true);
@@ -215,14 +217,14 @@ $(function () {
 			build.showTooltip(event);
 		}, 750);
 	});
-	$(".cellFam").on("mouseleave", function () {
+	cellFams.on("mouseleave", function () {
 		clearTimeout(iBV.tooltipTO);
 		$("#buildTooltip").hide();
 		if ($(this).hasClass("preReq")) {
 			highLightRec(getItem($(this)[0].id, false), false);
 		}
 	});
-	$(".cellFam").on("select", function (event) {
+	cellFams.on("select", function (event) {
 		event.preventDefault();
 	});
 	setDraggable();
@@ -231,26 +233,27 @@ $(function () {
 	/* ******** */
 	/* deletion */
 	/* ******** */
-	$(document).on("mouseenter", ".enabledList div[id]", null, function () {
+
+	buildListDiv.on("mouseenter", ".enabledList div[id]", null, function () {
 		$(this).append("<div class='delCross'>X</div>");
 	});
-	$(document).on("mouseleave", ".enabledList div[id]", null, function () {
+	buildListDiv.on("mouseleave", ".enabledList div[id]", null, function () {
 		$(this).children('.delCross').remove();
 	});
-	$(document).on("mouseenter", "#buildList2:not(.enabledList) div[id]", null, function () {
+	buildListDiv.on("mouseenter", "#buildList2:not(.enabledList) div[id]", null, function () {
 		$(this).append("<div class='delCross'>X</div>");
 	});
-	$(document).on("mouseleave", "#buildList2:not(.enabledList) div[id]", null, function () {
+	buildListDiv.on("mouseleave", "#buildList2:not(.enabledList) div[id]", null, function () {
 		$(this).children('.delCross').remove();
 	});
-	$(document).on("mouseenter", ".delCross", null, function () {
+	buildListDiv.on("mouseenter", ".delCross", null, function () {
 		deleteMeAnChildren($(this).parent(), true);
 		while (!deleteIncoherentTime()) {}
 	});
-	$(document).on("mouseleave", ".delCross", null, function () {
+	buildListDiv.on("mouseleave", ".delCross", null, function () {
 		$(".mightDel").removeClass("mightDel");
 	});
-	$(document).on("click", '.delCross', null, function () {
+	buildListDiv.on("click", '.delCross', null, function () {
 		$(".mightDel").each(deleteElt);
 		setColorFromState();
 		setDraggable();
@@ -855,12 +858,13 @@ function handleContact() {
 /* tooltip */
 /* ******* */
 building.prototype.showTooltip = function (event) {
-	$("#innerTooltip").html(this.descr);
+	$("#innerTooltipText").html(this.descr);
 	$("#innerTooltip").css("margin-left", ((this.myDiv[0].id.match(/(\d)\d?/)[1] - 1) * -16.6) + "%");
 	var pos = $(event.target).offset();
 	$("#buildTooltip").css({
-		"top": (pos.top - $(event.target).height() - 15) + "px",
+		"top": (pos.top - $(event.target).height() - 35) + "px",
 		"left": (pos.left + 5) + "px"
 	});
+	$("#innerTooltipImg")[0].src = "static/img/" + this.myDiv[0].id.toLowerCase() + ".jpg";
 	$("#buildTooltip").show();
 };
