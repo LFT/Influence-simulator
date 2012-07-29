@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-05-06 20:03+0200\n"
+"POT-Creation-Date: 2012-07-29 03:51+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,6 +16,344 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1)\n"
+
+msgid "+5% Karma Banner"
+msgstr "Bannière de Karma +5%"
+
+#, fuzzy
+msgid ""
+"Spawns a guild banner that will give +5% karma buff to any ally that touches "
+"it for 30 minutes."
+msgstr ""
+"Crée une bannière de guilde qui confère pendant 30 minutes un bonus de karma "
+"de 5% à tout allié qui la touche."
+
+msgid "Guild Emblem Template"
+msgstr "Modèle d'emblème de guilde"
+
+msgid ""
+"Allows guild members to create a permanent guild emblem design at the Guild "
+"Registrar for use on banners and other displays."
+msgstr ""
+"Permet aux membres de la guilde de créer un blason de guilde permanent "
+"destiné aux bannières et autres affichages auprès du Greffier de guilde."
+
+#, fuzzy
+msgid "+5% Influence for 24Hrs."
+msgstr "Influence +5% pendant 24 heures"
+
+#, fuzzy
+msgid ""
+"Improves guild influence gain in PvE for 24 hours. Stacks with other "
+"Influence boosts"
+msgstr ""
+"Augmente l'influence gagnée par la guilde en JcE de 5% pendant 24heures. "
+"Cumulable avec d'autres bonus d'influence."
+
+msgid "Road Marker"
+msgstr "Rrpère routier"
+
+#, fuzzy
+msgid ""
+"Spawns a road marker that will give 20 secondes of swiftness to any ally "
+"that touches it."
+msgstr ""
+"Créer un repère routier de guilde qui confère 20 secondes de rapidité à tout "
+"allié qui le touche."
+
+msgid "Guild Armorer Contract"
+msgstr "Contrat d'armurier de Guilde"
+
+msgid ""
+"Allows guild members to purchase armor items that display the guild emblem. "
+"Vendors are available in major cities. (Requires Politics - Emblem Template)"
+msgstr ""
+"Permet aux membres de guilde d'acheter des pièces d'armures portant le "
+"blason de la guilde. Des marchands sont disponibles dans les villes "
+"principales.(Requiert Politique - modèle de blason)"
+
+msgid "Guild Weapons Contract"
+msgstr "Contrat d'armes de Guilde"
+
+msgid ""
+"Allows guild members to purchase weapon items that display the guild emblem. "
+"Vendors are available in major cities. (Requires Politics - Emblem Template)"
+msgstr ""
+"Permet aux membres de la guilde d'acheter des armes portant le blason de la "
+"guilde. Des marchands sont disponibles dans les villes principales. "
+"(Requiert Politique - Modèle de Blason)"
+
+msgid "Contract Asuran Outsourcing"
+msgstr "Contrat de sous-traintance Asura"
+
+msgid ""
+"A freelance Asuran Lab will help you develop one upgrade without using up "
+"one of your work slots."
+msgstr ""
+"Un laboratoire asura indépendant vous aide à développer une amélioration "
+"sans utiliser l'un de vos emplacement de travail."
+
+msgid "+10% Influence from Events"
+msgstr "+10% d'Influence pour les Événements"
+
+msgid ""
+"Hire an event herald to increase the influence your guild earns from doing "
+"events for 24 hours."
+msgstr ""
+"Embauche un héraut d'évènements qui augmente pendant 24 heures l'influence "
+"obtenue par votre guilde lors des évènements."
+
+msgid "+20% Dungeon Influence for 24 Hrs"
+msgstr "+20% d'Influence des Donjons sur 24h"
+
+msgid ""
+"A dungeon survey before beginning will increase dungeon influence reward by "
+"20%. Lasts 24 hours."
+msgstr ""
+"Le repérage préalable d'un donjon augmente les récompenses d'influence de ce "
+"dernier de 20% Dure 24 heures."
+
+msgid "Guild Banquet"
+msgstr "Banquet de Guilde"
+
+msgid ""
+"Spawns a banquet table, keg, and various other party items which players can "
+"eat and drink from. Lasts 1 hour."
+msgstr ""
+"Crée une table de banquet, un tonneau et divers autres objet festifs "
+"permettant aux joueurs de manger et de boire. Dure 1 heure."
+
+#, fuzzy
+msgid "+10% PvP Influence for 24 Hours"
+msgstr "+10% Influence JcJ pendant 24h"
+
+#, fuzzy, python-format
+msgid "All influence earned in pvp is increased by 10% for 24 hours."
+msgstr "Augmente toute influence gagnée en JcJ est de 10% pendant 24 heures."
+
+#, fuzzy, python-format
+msgid "WvW Fort +10% Experience"
+msgstr "Fort McM - Expérience +10%"
+
+msgid ""
+"For 12 Hrs, any fortification held by your guild in World Vs World will give "
+"increased exp to defending allies."
+msgstr ""
+"Pendant 12 heures, toute fortification tenue par votre guilde en Monde contre "
+"Monde confère un surcroît d'expérience aux alliés en défense."
+
+msgid "WvW Fort +10% Magic Find"
+msgstr "Fort McM +10% Découverte de Magie"
+
+msgid ""
+"For 12 Hrs, any fortification held by your guild in World Vs World will give "
+"allies a better chance to discover rare loot."
+msgstr ""
+"Pendant 12 heures, toute fortification tenue par votre guilde en Monde contre "
+"Monde confère aux alliés de meilleures chances de découvrir des butins rares."
+
+
+msgid "WvW Fort +5 Supply"
+msgstr "Fort McM +5 en Ravitaillement"
+
+msgid ""
+"For 12 Hrs, any fortification held by your guild in World Vs World will give "
+"improved Supply to all allies."
+msgstr ""
+"Pendant 12 heures, toute fortification tenuepar votre guilde en Monde contre "
+"Monde octroie un ravitaillement amélioré à tous vos alliés."
+
+msgid "WvW Fort +40 Vitality"
+msgstr "Fort McM +40 en Vitalité"
+
+msgid ""
+"For 12 Hrs, any fortification held by your guild in World Vs World will give "
+"improved Vitality to all allies."
+msgstr ""
+"Pendant 12 heures, toute fortification tenue par votre guilde en Monde contre "
+"Monde octroie une Vitallité améliorée à tous les alliés."
+
+msgid "WvW Fort +40 Toughness"
+msgstr "Fort McM +40 en Robustesse"
+
+msgid ""
+"For 12 Hrs, any fortification held by your guild in World Vs World will give "
+"improved Toughness to all allies."
+msgstr ""
+"Pendant 12 heures, toute fortification tenu par votre guilde en Monde contre "
+"Monde octroie une Robustesse améliorée à tous les alliés."
+
+msgid "WvW Fort +40 Power"
+msgstr "Fort McM +40 en Puissance"
+
+msgid ""
+"For 12 Hrs, any fortification held by your guild in World Vs World will give "
+"improved Power to all allies."
+msgstr ""
+"Pendant 12 heures, toute fortification tenu par votre guilde en Monde contre "
+"Monde octroie une Puissance améliorée à tous les alliés."
+
+msgid "WvW Fort +40 Precision"
+msgstr "Fort McM +40 en Précision"
+
+msgid ""
+"For 12 Hrs, any fortification held by your guild in World Vs World will give "
+"improved Precision to all allies."
+msgstr ""
+"Pendant 12 heures, toute fortification tenu par votre guilde en Monde contre "
+"Monde octroie une Précision améliorée à tous les alliés."
+
+msgid "WvW Fort +10% Healing"
+msgstr "Fort McM +10% en Guérison"
+
+msgid ""
+"For 12 Hrs, any fortification held by your guild in World Vs World will give "
+"improved Healing to all allies."
+msgstr ""
+"Pendant 12 heures, toute fortification tenu par votre guilde en Monde contre "
+"Monde octroie une Guérison améliorée à tous les alliés."
+
+msgid "WvW Fort +10% Player Health"
+msgstr "Fort McM +10% à la vie du Joueur"
+
+msgid ""
+"For 12 Hrs, any fortification held by your guild in World Vs World will give "
+"improved Health to all allies."
+msgstr ""
+"Pendant 12 heures, toute fortification tenu par votre guilde en Monde contre "
+"Monde octroie une Santé améliorée à tous les alliés."
+
+msgid "Guild Catapult"
+msgstr "Catapulte de Guilde"
+
+msgid ""
+"Create a Catapult Siege engine that costs less supply to set up than normal. "
+"(requires Foundry from Architecture)"
+msgstr ""
+"Crée une catapulte qui coute moins de ressources que son équivalent "
+"ordinaire. (requiert la Fonderie de l'Architecture)"
+
+msgid "WvW Fort +5% Swiftness"
+msgstr "Fort McM +5% Rapidité"
+
+msgid ""
+"For 12 Hrs, any fortification held by your guild in World Vs World will give "
+"improved Swiftness to all allies."
+msgstr ""
+"Pour 12 heures, toute fortification tenu par votre guilde en Monde contre "
+"Monde octroie de la rapidité améliorée à tous les alliés."
+
+msgid "Guild Siege Suit"
+msgstr "Habit de siège de la guilde"
+
+msgid ""
+"Create a Siege Suit that costs less supply to set up than normal. (requires "
+"Foundry from Architecture)"
+msgstr ""
+"Crée une tenu de siège qui coûte moins de ressources que son équivalent "
+"ordinaire. (requiert la Fonderie de l'Architecture)"
+
+#, fuzzy, python-format
+msgid "+5% Exp Public Banner"
+msgstr "Bannière Publique +5% d'Exp"
+
+#, fuzzy, python-format
+msgid ""
+"Spawns a guild banner that will give +5% exp to any ally that touches it for "
+"30 min. Stacks with other exp buffs."
+msgstr ""
+"Invoque une bannière de guilde qui procure +5% d'xp à chaque alliés qui la "
+"touche pendant 30 minutes. Se cumulte avec d'autres bonus à l'expérience."
+
+#, fuzzy, python-format
+msgid "+10% Gathering Bonus Banner"
+msgstr "Bannière +10% Bonus de récolte"
+
+#, fuzzy, python-format
+msgid ""
+"Spawns a guild banner that will give +10% gathering chance to any ally that "
+"touches it for 30 min. Stacks with other exp buffs."
+msgstr ""
+"Crée une bannière de guilde qui confère pendant 30 minutes un bonus de chance "
+"de récolte de 10% à tout allié qui la touche."
+
+#, fuzzy
+msgid "+10% Magic Find Banner"
+msgstr "Bannière de découvert de magie +10%"
+
+#, fuzzy
+msgid ""
+"Spawns a guild banner that will give +10% magic find to any ally that "
+"touches it for 30 min. Stacks with other loot buffs."
+msgstr ""
+"Crée une bannière de guilde qui confère pendant 30 minutes un bonus de découverte "
+"de magie de 10% à tout allié qui la touche. Cumulable avec d'autres bonus de butin."
+
+msgid "+10% Magic Find for 3 Days"
+msgstr "+10% Découverte de Magie sur 3 jours"
+
+msgid ""
+"For 3 days, guild members have 10% better chance to find rare loot. "
+"Traveling Antique Shows are great!"
+msgstr ""
+"Pendant 3 jours, les membres de votre guilde ont 10% de chance en plus de "
+"trouver des butins rares. Les expositions itinérantes d'antiquité sont "
+"formidable !"
+
+#, fuzzy
+msgid "+5% Kill exp for 24 Hours"
+msgstr "+5% d'exp pour chaque tué pendant 24h"
+
+#, fuzzy, python-format
+msgid "Imrpove all guild experience gain from kills by 5% for 24h"
+msgstr "Augmente l'influence gagnée par la guilde de 5% pour chaque ennemi tué pendant 24 heures."
+
+msgid "+15% Karma from Events for 24 Hours"
+msgstr "+15% Karma des Événements sur 24h"
+
+msgid ""
+"For 24 hours, your guild receives an additional 15% karma from all events."
+msgstr ""
+"Pendant 24 heures, votre guilde reçoit 15% de Karma additionnel de tous les "
+"évènements."
+
+#, fuzzy, python-format
+msgid "+10% Gathering Bonus for 48 Hours"
+msgstr "+10% bonus pour la Récolte sur 48 heures"
+
+#, fuzzy
+msgid ""
+"For 48 hours, guild members have 10% better chance to find rare materials "
+"from mining, logging, and harvesting."
+msgstr ""
+"Pendant 48 heures, les membres de votre guilde ont 10% de chance de trouver "
+"des matériaux rares par extraction, abattage ou ramassage."
+
+msgid "Guild Workshop"
+msgstr "Atelier de Guilde"
+
+msgid ""
+"The workshop allows an additional upgrade to be building simultaneously."
+msgstr ""
+"L'atelier permet la construction simultanée d'une amélioration additionelle."
+
+msgid "Guild Vault"
+msgstr "Caisse de la Guilde"
+
+msgid "Grants access to a 50 slot Guild Vault and gold storage"
+msgstr "Permet d'accéder à un coffre de guilde de 50 emplacements"
+
+msgid "Guild Treasure Trove"
+msgstr "Trésor de la Guilde"
+
+msgid "Grants access to a 100 slot Guild Vault"
+msgstr "Permet d'accéder à un coffre de guilde de 100 emplacements"
+
+msgid "Deep Cave"
+msgstr "Grotte profonde"
+
+msgid "The Deep Cave will expand your treasure trove by another 100 slots."
+msgstr "La Grotte profonde ajoute 100 emplacements à votre trésors."
 
 # ##############################
 # TEMPLATE 
@@ -261,7 +599,8 @@ msgid "What about the building speeding process"
 msgstr "Et le mécanisme d'accélération de la construction"
 
 msgid "Yet, I have no idea whatsoever on the way it works in game"
-msgstr "Je n'ai à l'heure actuelle aucune idée de son fonctionnement dans le jeu"
+msgstr ""
+"Je n'ai à l'heure actuelle aucune idée de son fonctionnement dans le jeu"
 
 msgid ""
 "I have some ideas/remarks/bugs or I'm not happy with some behavior. What do "
@@ -301,104 +640,17 @@ msgstr ""
 "Si vous vouliez traduire ce site dans un autre langage, vous êtes les "
 "bienvenus. Je peux aisément produire une liste des phrases à traduire."
 
-# #############################
-#  SHORT
-# ############################# 
-msgid "+5% Influence for 24h"
-msgstr "+5% d'Influence pour 24h"
+#~ msgid "+10% Influence for 3 Days"
+#~ msgstr "+10% d'Influence pour 3 jours"
 
-msgid "Guild Emblem Template"
-msgstr "Modèle d'emblème de guilde"
+#~ msgid "WvW Fort +5 Karma"
+#~ msgstr "Fort McM +5 en Karma"
 
-msgid "+10% Influence from Events"
-msgstr "+10% d'Influence pour les Événements"
+#~ msgid "+5% Karma from Events for 3 Days"
+#~ msgstr "5% Karma des Événements sur 3 jours"
 
-msgid "+5% Exp Public Banner"
-msgstr "Bannière Publique +5% d'Exp"
-
-msgid "Guild Armorer Contract"
-msgstr "Contrat d'armurier de Guilde"
-
-msgid "Guild Weapons Contract"
-msgstr "Contrat d'armes de Guilde"
-
-msgid "Contract Asuran Outsourcing"
-msgstr "Contrat de sous-traintance Asura"
-
-msgid "+20% Dungeon Influence for 24 Hrs"
-msgstr "+20% d'Influence des Donjons sur 24h"
-
-msgid "Guild Banquet"
-msgstr "Banquet de Guilde"
-
-msgid "+10% Influence for 3 Days"
-msgstr "+10% d'Influence pour 3 jours"
-
-msgid "WvW Fort +10% Experience"
-msgstr "McM Fort +10% d'Expérience"
-
-msgid "WvW Fort +10% Magic Find"
-msgstr "McM Fort +10% Découverte de Magie"
-
-msgid "WvW Fort +5 Supply"
-msgstr "McM Fort +5 en Ravitaillement"
-
-msgid "WvW Fort +5 Karma"
-msgstr "McM Fort +5 en Karma"
-
-msgid "WvW Fort +40 Vitality"
-msgstr "McM Fort +40 en Vitalité"
-
-msgid "WvW Fort +40 Toughness"
-msgstr "McM Fort +40 en Robustesse"
-
-msgid "WvW Fort +40 Power"
-msgstr "McM Fort +40 en Puissance"
-
-msgid "WvW Fort +40 Precision"
-msgstr "McM Fort +40 en Précision"
-
-msgid "WvW Fort +10% Healing"
-msgstr "McM Fort +10% en Guérison"
-
-msgid "WvW Fort +10% Player Health"
-msgstr "McM Fort +10% à la vie du Joueur"
-
-msgid "Guild Catapult"
-msgstr "Catapulte de Guilde"
-
-msgid "WvW Fort +5% Swiftness"
-msgstr "McM Fort +5% Rapidité"
-
-msgid "Guild Siege Suit"
-msgstr "Habit de siège de la guilde"
-
-msgid "+5% Karma from Events for 3 Days"
-msgstr "5% Karma des Événements sur 3 jours"
-
-msgid "+5% Exp from Events for 3 Days"
-msgstr "+5% Exp des Événements sur 3 jours"
-
-msgid "+10% Magic Find for 3 Days"
-msgstr "+10% Découverte de Magie sur 3 jours"
-
-msgid "+10% Gathering Bonus for 3 Days"
-msgstr "+10% bonus pour la Récolte sur 3 jours"
-
-msgid "+15% Karma from Events for 24 Hours"
-msgstr "+15% Karma des Événements sur 24h"
-
-msgid "Guild Workshop"
-msgstr "Atelier de Guilde"
-
-msgid "Guild Vault"
-msgstr "Caisse de la Guilde"
-
-msgid "Guild Treasure Trove"
-msgstr "Trésor de la Guilde"
-
-msgid "Deep Cave"
-msgstr "Grotte profonde"
+#~ msgid "+5% Exp from Events for 3 Days"
+#~ msgstr "+5% Exp des Événements sur 3 jours"
 
 # ##############################
 msgid "Politics"
@@ -478,221 +730,20 @@ msgstr "Economie Niveau 5"
 msgid "Architecture Level 5"
 msgstr "Architecture Niveau 5"
 
-# ###########################
-# LONG 
-# ###########################
-msgid "Improves guild influence gain in PvE for 24 hours."
-msgstr ""
-"Améliore l'influence de la guilde gagnée en PVE de 5% pendant 24heures."
+#~ msgid ""
+#~ "For 12 Hrs, any fortification held by your guild in World Vs World will "
+#~ "give karma to defending allies for each kill near the fort. Lasts 12 "
+#~ "hours."
+#~ msgstr ""
+#~ "Pendant 12 heures, toute fortification tenu par votre guilde en Monde "
+#~ "contre Monde octroie du karma aux alliés en défense pour tout ennemi tué "
+#~ "près du fort."
 
-msgid ""
-"Allows guild members to create a permanent guild emblem design at the "
-"Guild Registrar for use on banners and other displays."
-msgstr ""
-"Permet aux membres de la guilde de créer un blason de guilde permanent "
-"auprès du greffierde guilde et visible sur les bannières ou d'autres "
-"endroits prévus à cet effet."
-
-msgid ""
-"Hire an event herald to increase the influence your guild earns from "
-"doing events for 24 hours."
-msgstr ""
-"Loue un héraut d'évènements qui augmente l'influence gagnée de votre "
-"guilde pour gagnée lorsd'évènements pour 24 heures."
-
-msgid ""
-"Spawns a guild banner that will give +5% exp to any ally that touches it "
-"for one hour. Stacks with other exp buffs."
-msgstr ""
-"Invoque une bannière de guilde qui procure +5% d'xp à chaque alliés qui "
-"la touche pendant 1 heure. Se cumulte avec d'autre bonus d'XP."
-
-msgid ""
-"Allows guild members to purchase armor items that display the guild "
-"emblem. Vendors are available in major cities. (Requires Politics - "
-"Emblem Template)"
-msgstr ""
-"Permet aux membres de guilde d'acheter des pièces d'armures qui "
-"représentent l'emblème de guilde. Des marchands sont présents dans les "
-"villes principales. (Requiert Politique - modèle de blason)"
-
-msgid ""
-"Allows guild members to purchase weapon items that display the guild "
-"emblem. Vendors are available in major cities. (Requires Politics - "
-"Emblem Template)"
-msgstr ""
-"Permet aux membres de la guilde d'acheter des armes portant le blason de "
-"la guilde. Des marchands sont disponibles dans les villes principales. "
-"(Requiert Politique - Modèle de Blason)"
-
-msgid ""
-"A freelance Asuran Lab will help you develop one upgrade without using up "
-"one of your work slots."
-msgstr ""
-"Un laboratoire asura indépendant vous aide à développer une amélioration "
-"sans utiliser l'un de vos emplacement de travail."
-
-msgid ""
-"A dungeon survey before beginning will increase dungeon influence reward "
-"by 20%. Lasts 24 hours."
-msgstr ""
-"Le repérage préalable d'un donjon augmente les récompenses d'influence de "
-"ce dernier de 20% Dure 24 heures."
-
-msgid ""
-"Spawns a banquet table, keg, and various other party items which players "
-"can eat and drink from. Lasts 1 hour."
-msgstr ""
-"Crée une table de banquet, un tonneau et divers autres objet festifs "
-"permettant aux joueurs de manger et deboire. Dure 1 heure."
-
-msgid "All influence earned in pvp is increased by 10% for 3 days."
-msgstr "Toute influence gagnée en PvP est augmentée de 10% pendant 3 jours."
-
-msgid ""
-"For 12 Hrs, any fortification held by your guild in World Vs World will "
-"give increased exp to defending allies. Lasts 12 hours."
-msgstr ""
-"Pendant 12 heures, toute fortification tenu par votre guilde en Monde "
-"contre Monde octroie une augmentation d'expérience aux alliés en défense. "
-"Dure 12 heures."
-
-msgid ""
-"For 12 Hrs, any fortification held by your guild in World Vs World will "
-"give allies a better chance to discover rare loot. Lasts 12 hours."
-msgstr ""
-"Pendant 12 heures, toute fortification tenu par votre guilde en Monde "
-"contre Monde octroie aux alliés de meilleures chance de découvrir des "
-"butins rares. Dure 12 heures."
-
-msgid ""
-"For 12 Hrs, any fortification held by your guild in World Vs World will "
-"give improved Supply to all allies. Lasts 12 hours."
-msgstr ""
-"Pendant 12 heures, toute fortification tenu par votre guilde en Monde "
-"contre Monde octroie un ravitaillement amélioré à tous vos alliés. Dure "
-"12 heures."
-
-msgid ""
-"For 12 Hrs, any fortification held by your guild in World Vs World will "
-"give karma to defending allies for each kill near the fort. Lasts 12 "
-"hours."
-msgstr ""
-"Pendant 12 heures, toute fortification tenu par votre guilde en Monde "
-"contre Monde octroie du karma aux alliés en défense pour tout ennemi tué "
-"près du fort. Dure 12 heures."
-
-msgid ""
-"For 12 Hrs, any fortification held by your guild in World Vs World will "
-"give improved Vitality to all allies. Lasts 12 hours."
-msgstr ""
-"Pendant 12 heures, toute fortification tenu par votre guilde en Monde "
-"contre Monde octroie Vitallité améliorée à tous les alliés. Dure 12 "
-"heures."
-
-msgid ""
-"For 12 Hrs, any fortification held by your guild in World Vs World will "
-"give improved Toughness to all allies. Lasts 12 hours."
-msgstr ""
-"Pendant 12 heures, toute fortification tenu par votre guilde en Monde "
-"contre Monde octroie Robustesse améliorée à tous les alliés. Dure 12 "
-"heures."
-
-msgid ""
-"For 12 Hrs, any fortification held by your guild in World Vs World will "
-"give improved Power to all allies. Lasts 12 hours."
-msgstr ""
-"Pendant 12 heures, toute fortification tenu par votre guilde en Monde "
-"contre Monde octroie Puissance améliorée à tous les alliés. Dure 12 "
-"heures."
-
-msgid ""
-"For 12 Hrs, any fortification held by your guild in World Vs World will "
-"give improved Precision to all allies. Lasts 12 hours."
-msgstr ""
-"Pendant 12 heures, toute fortification tenu par votre guilde en Monde "
-"contre Monde octroie Précision améliorés à tous les alliés. Dure 12 "
-"heures."
-
-msgid ""
-"For 12 Hrs, any fortification held by your guild in World Vs World will "
-"give improved Healing to all allies. Lasts 12 hours."
-msgstr ""
-"Pendant 12 heures, toute fortification tenu par votre guilde en Monde "
-"contre Monde octroie Guérison améliorée à tous les alliés. Dure 12 heures."
-
-msgid ""
-"For 12 Hrs, any fortification held by your guild in World Vs World will "
-"give improved Health to all allies. Lasts 12 hours."
-msgstr ""
-"Pendant 12 heures, toute fortification tenu par votre guilde en Monde "
-"contre Monde octroie Santé améliorée à tous les alliés. Dure 12 heures."
-
-msgid ""
-"Create a Catapult Siege engine that costs less supply to set up than "
-"normal. (requires Foundry from Architecture)"
-msgstr ""
-"Crée une catapulte qui coute moins de ressources que son équivalent "
-"ordinaire. (requiert la Fonderie de l'Architecture)"
-
-msgid ""
-"For 12 Hrs, any fortification held by your guild in World Vs World will "
-"give improved Swiftness to all allies. Lasts 12 hours."
-msgstr ""
-"Pour 12 heures, toute fortification tenu par votre guilde en Monde contre "
-"Monde octroie de la rapidité améliorée à tous les alliés. Dure 12 heures."
-
-msgid ""
-"Create a Siege Suit that costs less supply to set up than normal. "
-"(requires Foundry from Architecture)"
-msgstr ""
-"Crée une tenu de siège qui coûte moins de ressources que son équivalent "
-"ordinaire. (requiert la Fonderie de l'Architecture)"
-
-msgid ""
-"For 3 days, your guild receives and additional 5% karma from all events."
-msgstr ""
-"Pendant 3 jours, votre guilde reçoit 5% de Karma en plus de tous les "
-"évènements."
-
-msgid "Improves guild experience gain by 5% for 3 days."
-msgstr "Augmente le gain d'expérience de 5% pendant 3 jours."
-
-msgid ""
-"For 3 days, guild members have 10% better chance to find rare loot. "
-"Traveling Antique Shows are great!"
-msgstr ""
-"Pendant 3 jours, les membres de votre guilde ont 10% de chance en plus de "
-"trouver des butins rares. Les expositions itinérantes d'antiquité sont "
-"formidable !"
-
-msgid ""
-"For 3 days, guild members have 10% better chance to find rare materials "
-"from mining, logging, and harvesting."
-msgstr ""
-"Pendant 3 jours, les membres de votre guilde ont 10% de chance de trouver "
-"des matériaux rares par extraction, abattage ou ramassage."
-
-msgid ""
-"For 24 hours, your guild receives an additional 15% karma from all events."
-msgstr ""
-"Pendant 24 heures, votre guilde reçoit 15% de Karma additionnel de tous "
-"les évènements."
-
-msgid ""
-"The workshop allows an additional upgrade to be building simultaneously."
-msgstr ""
-"L'atelier permet la construction simultanée d'une amélioration "
-"additionelle."
-
-msgid "Grants access to a 50 slot Guild Vault and gold storage"
-msgstr "Permet d'accéder à un coffre de guilde de 50 emplacements"
-
-msgid "Grants access to a 100 slot Guild Vault"
-msgstr "Permet d'accéder à un coffre de guilde de 100 emplacements"
-
-msgid "The Deep Cave will expand your treasure trove by another 100 slots."
-msgstr "La Grotte profonde ajoute 100 emplacements à votre trésors."
+#~ msgid ""
+#~ "For 3 days, your guild receives and additional 5% karma from all events."
+#~ msgstr ""
+#~ "Pendant 3 jours, votre guilde reçoit 5% de Karma en plus de tous les "
+#~ "évènements."
 
 # ##############################
 msgid "Increase your guild's skill in Politics to Level 1"

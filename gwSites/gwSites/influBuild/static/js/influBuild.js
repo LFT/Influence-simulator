@@ -5,10 +5,12 @@ var iBV = {
 	'dayCost': [],
 	'idInc': 0,
 	'cm': false,
-	'tc': 25,
+	/* constante de largeur d'une unité de temps*/
+	'tc': 6,
 	'cpDialog': null,
 	'lm': false,
-	'tooltipTO': null
+	'tooltipTO': null,
+	'tltOf': {'Art' : 0, 'Arc' : 5, 'Eco': 7, 'Pol' : 10}
 	/*'moveInt':null, */
 };
 /* ****** */
@@ -31,13 +33,20 @@ function building(name, parent, otherParent, cost, time, indirectChilds, descr) 
 /* ************ */
 /* utility bell */
 /* ************ */
+
+function extractIdInfo(inputId) {
+	var re = inputId.match(/(\w{3})(\d)(\d)?/);
+	return {'f': re[1], 'r' : parseInt(re[2], 10), 'l' : re[3] ? parseInt(re[3], 10) : 0};
+}
+
 function getFamily(inputId) {
-	var fam;
+	/*var fam;
 	for (fam in listBuilds) {
 		if (typeof listBuilds[fam][inputId] !== 'undefined') {
 			return fam;
 		}
-	}
+	}*/
+	return extractIdInfo(inputId).f;
 }
 
 function extractDisplayId(inputId) {
@@ -131,7 +140,7 @@ function resetDADLine(elts, index) {
 	elts.each(function () {
 		if (this.id !== "") {
 			item = getItem(this.id, true);
-			currentDay = Math.floor(time / 6);
+			currentDay = Math.floor(time / 24);
 			if (typeof iBV.dayCost[currentDay] !== 'undefined') {
 				iBV.dayCost[currentDay] += item.cost;
 			} else {
@@ -161,7 +170,7 @@ function resetDADAsuranLine() {
 		if (this.id !== "") {
 			listBuilds.Pol.Pol32.endTimesPos.shift();
 			item = getItem(this.id, true);
-			currentDay = Math.floor(time / 6);
+			currentDay = Math.floor(time / 24);
 			if (typeof iBV.dayCost[currentDay] !== 'undefined') {
 				iBV.dayCost[currentDay] += item.cost;
 			} else {
@@ -175,7 +184,7 @@ function resetDADAsuranLine() {
 		}
 		firstTime = listBuilds.Pol.Pol32.endTimesPos[0];
 		if (firstTime > time) {
-			$(this).after("<div class='time' style='width:" + (firstTime - time) * iBV.tc + "px;'><span class='styler'>&nbsp;</span></div>");
+			$(this).after("<div style='width:" + (firstTime - time) * iBV.tc + "px;'><span class='styler'>&nbsp;</span></div>");
 			time = firstTime;
 		}
 	});
@@ -200,8 +209,10 @@ $(function () {
 		"zIndex": 101,
 		"revertDuration": 0,
 		"start": function () {
+			clearTimeout(iBV.tooltipTO);
+			$("#buildTooltip").hide();
 			iBV.currentObj = listBuilds[this.parentNode.parentNode.id][this.id];
-			$(".enabledList").append("<div class='time" + iBV.currentObj.time + " tempBuild'><span class='styler'>&nbsp;</span></div>");
+			$(".enabledList").append("<div style='width:" + iBV.currentObj.time * iBV.tc + "px;' class='tempBuild'><span class='styler'>&nbsp;</span></div>");
 		},
 		"stop": function () {
 			$(".tempBuild").remove();
@@ -209,19 +220,23 @@ $(function () {
 	});
 	/* Prereq on enter */
 	cellFams.on("mouseenter", function (event) {
-		var build = getItem($(this)[0].id, false);
-		if (!$(this).hasClass("inUse")) {
-			highLightRec(build, true);
+		if (!$(this).hasClass("ui-draggable-dragging")) {
+			var build = getItem($(this)[0].id, false);
+			if (!$(this).hasClass("inUse")) {
+				highLightRec(build, true);
+			}
+			iBV.tooltipTO = setTimeout(function () {
+				build.showTooltip(event);
+			}, 750);
 		}
-		iBV.tooltipTO = setTimeout(function () {
-			build.showTooltip(event);
-		}, 750);
 	});
 	cellFams.on("mouseleave", function () {
-		clearTimeout(iBV.tooltipTO);
-		$("#buildTooltip").hide();
-		if ($(this).hasClass("preReq")) {
-			highLightRec(getItem($(this)[0].id, false), false);
+		if (!$(this).hasClass("ui-draggable-dragging")) {
+			clearTimeout(iBV.tooltipTO);
+			$("#buildTooltip").hide();
+			if ($(this).hasClass("preReq")) {
+				highLightRec(getItem($(this)[0].id, false), false);
+			}
 		}
 	});
 	cellFams.on("select", function (event) {
@@ -354,7 +369,7 @@ function initObjects() {
 /* Drop */
 /* **** */
 function addObjectOnLine(obj, line, index, isDrop) {
-	var currentDay = Math.floor(iBV.lineTime[index] / 6);
+	var currentDay = Math.floor(iBV.lineTime[index] / 24);
 	if (typeof iBV.dayCost[currentDay] !== 'undefined') {
 		iBV.dayCost[currentDay] += obj.cost;
 	} else {
@@ -370,14 +385,14 @@ function addObjectOnLine(obj, line, index, isDrop) {
 		if (listBuilds.Pol.Pol32.endTimesPos.length === 0 && isDrop) {
 			initDrop($("#buildList2"));
 			if (iBV.lineTime[index] > iBV.lineTime[2]) {
-				$("#buildList2").append("<div class='time' style='width:" + (iBV.lineTime[index] - iBV.lineTime[2]) * iBV.tc + "px;'><span class='styler'>&nbsp;</span></div>");
+				$("#buildList2").append("<div style='width:" + (iBV.lineTime[index] - iBV.lineTime[2]) * iBV.tc + "px;'><span class='styler'>&nbsp;</span></div>");
 				iBV.lineTime[2] = iBV.lineTime[index];
 			}
 		}
 		listBuilds.Pol.Pol32.endTimesPos.push(iBV.lineTime[index]);
 	}
 	/* table */
-	line.append("<div class='time" + obj.time + "' id='il" + ((obj.myDiv.hasClass("canRepeat") ? ++iBV.idInc : '') + obj.myDiv[0].id) + "'><span class='styler'><span class='text'>" + obj.name + "</span></span></div>");
+	line.append("<div style='width:" + obj.time * iBV.tc + "px;' id='il" + ((obj.myDiv.hasClass("canRepeat") ? ++iBV.idInc : '') + obj.myDiv[0].id) + "'><span class='styler'><span class='text'>" + obj.name + "</span></span></div>");
 	obj.placedDiv.push(line.children().last());
 }
 
@@ -411,7 +426,7 @@ function initDrop(dropTr) {
 				} else {
 					time = listBuilds.Pol.Pol32.endTimesPos[0];
 					if (time > iBV.lineTime[2]) {
-						$("#buildList2").append("<div class='time' style='width:" + (time - iBV.lineTime[2]) * iBV.tc + "px;'><span class='styler'>&nbsp;</span></div>");
+						$("#buildList2").append("<div style='width:" + (time - iBV.lineTime[2]) * iBV.tc + "px;'><span class='styler'>&nbsp;</span></div>");
 						iBV.lineTime[2] = time;
 					}
 				}
@@ -465,7 +480,7 @@ function enableWhatNeedsToBe(item) {
 	if (elt[0].id === "Arc11") {
 		initDrop($("#buildList1"));
 		if (!iBV.cm && !iBV.lm) {
-			$("#buildList1").append("<div class='time' style='width:" + iBV.lineTime[1] * iBV.tc + "px;'><span class='styler'>&nbsp;</span></div>");
+			$("#buildList1").append("<div style='width:" + iBV.lineTime[1] * iBV.tc + "px;'><span class='styler'>&nbsp;</span></div>");
 		}
 	}
 }
@@ -534,20 +549,20 @@ function addTimeAndCost() {
 	len = $("#timeLine").children().length - 1;
 	emptyList = $();
 	el2 = $();
-	if (len > Math.floor(iBV.maxTime / 6)) {
+	if (len > Math.floor(iBV.maxTime / 24)) {
 		$(".fillBy5").each(function () {
-			$(this).children().slice(Math.floor(iBV.maxTime / 6) + 1).remove();
+			$(this).children().slice(Math.floor(iBV.maxTime / 24) + 1).remove();
 		});
-		len = Math.floor(iBV.maxTime / 6);
+		len = Math.floor(iBV.maxTime / 24);
 	}
-	while (len < Math.floor(iBV.maxTime / 6)) {
-		emptyList = emptyList.add("<div class='time6'><span class='styler'><span class='text'> Day " + (++len) + "</span></span></div>");
-		el2 = el2.add("<div class='time6'><span class='styler'></span></div>");
+	while (len < Math.floor(iBV.maxTime / 24)) {
+		emptyList = emptyList.add("<div class='timeDay'><span class='styler'><span class='text'> Day " + (++len) + "</span></span></div>");
+		el2 = el2.add("<div class='timeDay'><span class='styler'></span></div>");
 	}
-	if (len * 6 < iBV.maxTime) {
-		colsp = iBV.maxTime - len * 6;
-		emptyList = emptyList.add("<div class='time" + colsp + " incompleteDay'><span class='styler'><span class='text'> D. " + (++len) + "</span></span></div>");
-		el2 = el2.add("<div class='time" + colsp + " incompleteDay'><span class='styler'></span></div>");
+	if (len * 24 < iBV.maxTime) {
+		colsp = (iBV.maxTime - len * 24) * iBV.tc;
+		emptyList = emptyList.add("<div style='width:" + colsp + "px' class='incompleteDay'><span class='styler'><span class='text'> D. " + (++len) + "</span></span></div>");
+		el2 = el2.add("<div style='width:" + colsp + "px' class='incompleteDay'><span class='styler'></span></div>");
 	}
 	$("#timeLine").append(emptyList);
 	$("#costPerDay").append(el2);
@@ -746,7 +761,7 @@ function generateLineIn(inStr, lineIndex) {
 	while ((ar = re.exec(inStr)) !== null) {
 		if (ar[1] === "s") {
 			iBV.lineTime[lineIndex] += Math.floor(parseInt(ar[2], 10) / iBV.tc);
-			line.append("<div class='time' style='width:" + parseInt(ar[2], 10) + "px;'><span class='styler'>&nbsp;</span></div>");
+			line.append("<div style='width:" + parseInt(ar[2], 10) + "px;'><span class='styler'>&nbsp;</span></div>");
 		} else {
 			item = getItem(iNs[ar[1]] + ar[2], false);
 			addObjectOnLine(item, line, lineIndex, false);
@@ -858,13 +873,14 @@ function handleContact() {
 /* tooltip */
 /* ******* */
 building.prototype.showTooltip = function (event) {
+	var pos, info = extractIdInfo(this.myDiv[0].id);
 	$("#innerTooltipText").html(this.descr);
-	$("#innerTooltip").css("margin-left", ((this.myDiv[0].id.match(/(\d)\d?/)[1] - 1) * -16.6) + "%");
-	var pos = $(event.target).offset();
+	$("#innerTooltip").css("margin-left", (info.r - 1) * -16.6 + "%");
+	pos = $(event.target).offset();
 	$("#buildTooltip").css({
 		"top": (pos.top - $(event.target).height() - 35) + "px",
 		"left": (pos.left + 5) + "px"
 	});
-	$("#innerTooltipImg")[0].src = "static/img/" + this.myDiv[0].id.toLowerCase() + ".jpg";
+	$("#innerTooltipImg").css("background-position", (info.r - 1) * -48 + "px " + (iBV.tltOf[info.f] + info.l) * -48 + "px");
 	$("#buildTooltip").show();
 };
