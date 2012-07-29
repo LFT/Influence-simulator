@@ -112,9 +112,9 @@ body{
 .fillBy5  .styler{
 	background-color: rgba(200, 150, 50, 0.3)
 }
-
+/*
 .time1{
-	width:25px;
+	width:24px;
 }
 .time2{
 	width:50px;
@@ -127,10 +127,11 @@ body{
 }
 .time5{
 	width:125px;
+}*/
+.timeDay{
+	width:144px;
 }
-.time6{
-	width:150px;
-}
+/*
 .time12{
 	width:300px;
 }
@@ -143,7 +144,7 @@ body{
 .time42{
 	width:1050px;
 }
-
+*/
 .delCross{
 	float:right;
 	border-radius:12px;
@@ -333,8 +334,13 @@ body{
 	font-family: Arial,sans-serif;
 	width:100%;
 }
-
 #innerTooltipImg {
-	width:30px;
+	width: 48px;
+	height: 48px;
+	transform: scale(0.625);
+	-moz-transform:scale(0.625);
+	-webkit-transform:scale(0.625);
+	background-image:url("../img/tooltipsimg.png");
 	float: left;
+	margin-top:-8px;
 }
