@@ -20,7 +20,7 @@ msgstr ""
 msgid "+5% Karma Banner"
 msgstr "Bannière de Karma +5%"
 
-#, fuzzy
+
 msgid ""
 "Spawns a guild banner that will give +5% karma buff to any ally that touches "
 "it for 30 minutes."
@@ -38,11 +38,11 @@ msgstr ""
 "Permet aux membres de la guilde de créer un blason de guilde permanent "
 "destiné aux bannières et autres affichages auprès du Greffier de guilde."
 
-#, fuzzy
+
 msgid "+5% Influence for 24Hrs."
 msgstr "Influence +5% pendant 24 heures"
 
-#, fuzzy
+
 msgid ""
 "Improves guild influence gain in PvE for 24 hours. Stacks with other "
 "Influence boosts"
@@ -51,9 +51,9 @@ msgstr ""
 "Cumulable avec d'autres bonus d'influence."
 
 msgid "Road Marker"
-msgstr "Rrpère routier"
+msgstr "Repère routier"
 
-#, fuzzy
+
 msgid ""
 "Spawns a road marker that will give 20 secondes of swiftness to any ally "
 "that touches it."
@@ -123,15 +123,15 @@ msgstr ""
 "Crée une table de banquet, un tonneau et divers autres objet festifs "
 "permettant aux joueurs de manger et de boire. Dure 1 heure."
 
-#, fuzzy
+
 msgid "+10% PvP Influence for 24 Hours"
 msgstr "+10% Influence JcJ pendant 24h"
 
-#, fuzzy, python-format
+
 msgid "All influence earned in pvp is increased by 10% for 24 hours."
 msgstr "Augmente toute influence gagnée en JcJ est de 10% pendant 24 heures."
 
-#, fuzzy, python-format
+
 msgid "WvW Fort +10% Experience"
 msgstr "Fort McM - Expérience +10%"
 
@@ -253,11 +253,10 @@ msgstr ""
 "Crée une tenu de siège qui coûte moins de ressources que son équivalent "
 "ordinaire. (requiert la Fonderie de l'Architecture)"
 
-#, fuzzy, python-format
+
 msgid "+5% Exp Public Banner"
 msgstr "Bannière Publique +5% d'Exp"
 
-#, fuzzy, python-format
 msgid ""
 "Spawns a guild banner that will give +5% exp to any ally that touches it for "
 "30 min. Stacks with other exp buffs."
@@ -265,11 +264,10 @@ msgstr ""
 "Invoque une bannière de guilde qui procure +5% d'xp à chaque alliés qui la "
 "touche pendant 30 minutes. Se cumulte avec d'autres bonus à l'expérience."
 
-#, fuzzy, python-format
+
 msgid "+10% Gathering Bonus Banner"
 msgstr "Bannière +10% Bonus de récolte"
 
-#, fuzzy, python-format
 msgid ""
 "Spawns a guild banner that will give +10% gathering chance to any ally that "
 "touches it for 30 min. Stacks with other exp buffs."
@@ -277,11 +275,9 @@ msgstr ""
 "Crée une bannière de guilde qui confère pendant 30 minutes un bonus de chance "
 "de récolte de 10% à tout allié qui la touche."
 
-#, fuzzy
 msgid "+10% Magic Find Banner"
 msgstr "Bannière de découvert de magie +10%"
 
-#, fuzzy
 msgid ""
 "Spawns a guild banner that will give +10% magic find to any ally that "
 "touches it for 30 min. Stacks with other loot buffs."
@@ -300,11 +296,10 @@ msgstr ""
 "trouver des butins rares. Les expositions itinérantes d'antiquité sont "
 "formidable !"
 
-#, fuzzy
+
 msgid "+5% Kill exp for 24 Hours"
 msgstr "+5% d'exp pour chaque tué pendant 24h"
 
-#, fuzzy, python-format
 msgid "Imrpove all guild experience gain from kills by 5% for 24h"
 msgstr "Augmente l'influence gagnée par la guilde de 5% pour chaque ennemi tué pendant 24 heures."
 
@@ -317,11 +312,10 @@ msgstr ""
 "Pendant 24 heures, votre guilde reçoit 15% de Karma additionnel de tous les "
 "évènements."
 
-#, fuzzy, python-format
 msgid "+10% Gathering Bonus for 48 Hours"
 msgstr "+10% bonus pour la Récolte sur 48 heures"
 
-#, fuzzy
+
 msgid ""
 "For 48 hours, guild members have 10% better chance to find rare materials "
 "from mining, logging, and harvesting."
