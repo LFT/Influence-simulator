@@ -395,7 +395,7 @@ function addObjectOnLine(obj, line, index, isDrop) {
 	/* table */
 	textW = $("#widthTester").text(obj.name).width();
 	realW = obj.time * iBV.tc;
-	info = extractIdInfo(obj.myDiv[0].id );
+	info = extractIdInfo(obj.myDiv[0].id);
 	innerImg = "<span  style='background-position:" + (info.r - 1) * -48 + "px " + (iBV.tltOf[info.f] + info.l) * -48 + "px;' class='imgLine";
 	//$("#innerTooltipImg").css("", );
 	if (textW > (realW - 25) * 3) {
