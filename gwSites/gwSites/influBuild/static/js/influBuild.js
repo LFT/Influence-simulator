@@ -1,3 +1,4 @@
+
 var iBV = {
 	'maxTime': 0,
 	'lineTime': [0, 0, 0],
@@ -369,7 +370,7 @@ function initObjects() {
 /* Drop */
 /* **** */
 function addObjectOnLine(obj, line, index, isDrop) {
-	var currentDay = Math.floor(iBV.lineTime[index] / 24);
+	var classN, lh, textW, realW, innerText, info, innerImg, currentDay = Math.floor(iBV.lineTime[index] / 24);
 	if (typeof iBV.dayCost[currentDay] !== 'undefined') {
 		iBV.dayCost[currentDay] += obj.cost;
 	} else {
@@ -392,7 +393,35 @@ function addObjectOnLine(obj, line, index, isDrop) {
 		listBuilds.Pol.Pol32.endTimesPos.push(iBV.lineTime[index]);
 	}
 	/* table */
-	line.append("<div style='width:" + obj.time * iBV.tc + "px;' id='il" + ((obj.myDiv.hasClass("canRepeat") ? ++iBV.idInc : '') + obj.myDiv[0].id) + "'><span class='styler'><span class='text'>" + obj.name + "</span></span></div>");
+	textW = $("#widthTester").text(obj.name).width();
+	realW = obj.time * iBV.tc;
+	info = extractIdInfo(obj.myDiv[0].id );
+	innerImg = "<span  style='background-position:" + (info.r - 1) * -48 + "px " + (iBV.tltOf[info.f] + info.l) * -48 + "px;' class='imgLine";
+	//$("#innerTooltipImg").css("", );
+	if (textW > (realW - 25) * 3) {
+		innerText = innerImg + " soloImg'></span>";
+	} else {
+		if (textW > (realW - 25) * 2) {
+			lh = "15";
+			classN = " multiLine";
+		} else if (textW > realW - 25) {
+			lh = "25";
+			classN = " multiLine";
+		} else {
+			lh = "50";
+			classN = " singleLine";
+		}
+		innerText = "<span class='ib lh" + lh + "'>" + innerImg + classN + "'></span>" + obj.name + "</span>";
+	}
+	/*if (textW > realW * 3) {
+		
+	} else if (textW + 48 < realW) {
+		
+	} else {
+		innerText = "<span class='text'>" + innerImg + " multiLine'></span>" + obj.name + "</span>";
+	}*/
+	line.append("<div style='width:" + realW + "px;' id='il" + ((obj.myDiv.hasClass("canRepeat") ? ++iBV.idInc : '') + obj.myDiv[0].id) +
+		"'><span class='styler'>" + innerText + "</span></div>");
 	obj.placedDiv.push(line.children().last());
 }
 
@@ -556,12 +585,12 @@ function addTimeAndCost() {
 		len = Math.floor(iBV.maxTime / 24);
 	}
 	while (len < Math.floor(iBV.maxTime / 24)) {
-		emptyList = emptyList.add("<div class='timeDay'><span class='styler'><span class='text'> Day " + (++len) + "</span></span></div>");
+		emptyList = emptyList.add("<div class='timeDay'><span class='styler'>Day " + (++len) + "</span></div>");
 		el2 = el2.add("<div class='timeDay'><span class='styler'></span></div>");
 	}
 	if (len * 24 < iBV.maxTime) {
 		colsp = (iBV.maxTime - len * 24) * iBV.tc;
-		emptyList = emptyList.add("<div style='width:" + colsp + "px' class='incompleteDay'><span class='styler'><span class='text'> D. " + (++len) + "</span></span></div>");
+		emptyList = emptyList.add("<div style='width:" + colsp + "px' class='incompleteDay'><span class='styler'>D. " + (++len) + "</span></div>");
 		el2 = el2.add("<div style='width:" + colsp + "px' class='incompleteDay'><span class='styler'></span></div>");
 	}
 	$("#timeLine").append(emptyList);

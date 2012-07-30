@@ -16,6 +16,10 @@ body{
 	cursor:default;
 }
 
+.ib, .line > div, .styler, #bCaccordion,.styler .imgLine{
+	display:inline-block;
+}
+
 #Art, #h3Art, [id*="Art"] .styler{
 	background: rgba(224, 03, 18, 0.4);/*#E00312;*/
 }
@@ -57,7 +61,6 @@ body{
 }
 
 .line > div{
-	display:inline-block;
 	text-align: center;
 	position:relative;
 	height:20px;
@@ -68,23 +71,42 @@ body{
 	height:20px;
 	margin-bottom:5px;
 }
-.line[id^="buildList"], .line[id^="buildList"] > div{
+.lh50, .line[id^="buildList"], .line[id^="buildList"] > div{
 	height:50px;
 	line-height:50px;
 }
+.lh25{
+	line-height:24px;
+}
+.lh15{
+	line-height:15px;
+}
 .styler{
 	border: 1px dotted black;
-	display:inline-block;
 	width: 100%;
 	height: 100%;
 	overflow:hidden;
 }
-.text {
-    display: inline-block;
-    line-height: 1.3;
-    vertical-align: middle;
-	width: 100%;
-    word-wrap: break-word;
+.styler .imgLine{
+	transform: scale(0.5);
+	-moz-transform:scale(0.5);
+	-webkit-transform:scale(0.5);
+	margin-right: -12px;
+	margin-top:0;
+	float:none;
+}
+.imgLine.soloImg {
+	position:relative;
+	left:-12px;
+}
+.imgLine.singleLine{
+	margin-right:0px;
+	float: left;
+}
+.imgLine.multiLine{
+	float:left;
+}
+.lh25,.lh15 {
 	white-space:normal;
 }
 .line > :first-child{
@@ -112,39 +134,11 @@ body{
 .fillBy5  .styler{
 	background-color: rgba(200, 150, 50, 0.3)
 }
-/*
-.time1{
-	width:24px;
-}
-.time2{
-	width:50px;
-}
-.time3{
-	width:75px;
-}
-.time4{
-	width:100px;
-}
-.time5{
-	width:125px;
-}*/
+
 .timeDay{
 	width:144px;
 }
-/*
-.time12{
-	width:300px;
-}
-.time18{
-	width:450px;
-}
-.time30{
-	width:750px;
-}
-.time42{
-	width:1050px;
-}
-*/
+
 .delCross{
 	float:right;
 	border-radius:12px;
@@ -173,7 +167,6 @@ body{
 	min-height:320px;
 }
 #bCaccordion{
-	display:inline-block;
 	width:auto;
 }
 /*needed to overcome ui behavior*/
@@ -334,7 +327,7 @@ body{
 	font-family: Arial,sans-serif;
 	width:100%;
 }
-#innerTooltipImg {
+.imgLine, #innerTooltipImg {
 	width: 48px;
 	height: 48px;
 	transform: scale(0.625);
@@ -343,4 +336,13 @@ body{
 	background-image:url("../img/tooltipsimg.png");
 	float: left;
 	margin-top:-8px;
+}
+
+
+#widthTester {
+	line-height:1.3;
+	position:absolute;
+	top:-100px;
+	left:-100px;
+	display:none;
 }
