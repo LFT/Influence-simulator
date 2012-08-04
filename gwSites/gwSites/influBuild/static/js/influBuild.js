@@ -310,6 +310,8 @@ $(function () {
 		"width": "auto",
 		"height": "auto"
 	});
+	
+	$("#accorFaq").accordion();
 	$("#faqDialog").dialog({
 		"autoOpen": false,
 		"title": "FAQ",
@@ -370,7 +372,7 @@ function initObjects() {
 /* Drop */
 /* **** */
 function addObjectOnLine(obj, line, index, isDrop) {
-	var classN, lh, textW, realW, innerText, info, innerImg, currentDay = Math.floor(iBV.lineTime[index] / 24);
+	var classN, lh, textW, numLine, realW, innerText, info, innerImg, currentDay = Math.floor(iBV.lineTime[index] / 24);
 	if (typeof iBV.dayCost[currentDay] !== 'undefined') {
 		iBV.dayCost[currentDay] += obj.cost;
 	} else {
@@ -393,12 +395,39 @@ function addObjectOnLine(obj, line, index, isDrop) {
 		listBuilds.Pol.Pol32.endTimesPos.push(iBV.lineTime[index]);
 	}
 	/* table */
-	textW = $("#widthTester").text(obj.name).width();
 	realW = obj.time * iBV.tc;
+	$("#widthTester").width(Math.max(realW - 25,12));
+	numLine = $("#widthTester").text(obj.name).height()/10;
+	console.log(obj.name , numLine)
+	//textW = $("#widthTester").text(obj.name).width();
+	//
 	info = extractIdInfo(obj.myDiv[0].id);
 	innerImg = "<span  style='background-position:" + (info.r - 1) * -48 + "px " + (iBV.tltOf[info.f] + info.l) * -48 + "px;' class='imgLine";
+	lh = "";
 	//$("#innerTooltipImg").css("", );
-	if (textW > (realW - 25) * 3) {
+	switch (numLine){
+	case 3:
+		lh = "15";
+	case 2:
+		if (lh === "") {
+			lh = "25";
+		}
+		classN = " multiLine";	
+	case 1:
+		if (lh === "") {
+			lh = "50";
+			classN = " singleLine";		
+		}
+		innerText = "<span class='ib lh" + lh + "'>" + innerImg + classN + "'></span>" + obj.name + "</span>";
+		break;
+	default:
+		if (realW > 36) {
+			innerImg += " noLeft";
+		}
+		innerText = innerImg + " soloImg'></span>";
+		break;
+	}
+	/*if (numLine > 3) {
 		innerText = innerImg + " soloImg'></span>";
 	} else {
 		if (textW > (realW - 25) * 2) {
@@ -412,7 +441,7 @@ function addObjectOnLine(obj, line, index, isDrop) {
 			classN = " singleLine";
 		}
 		innerText = "<span class='ib lh" + lh + "'>" + innerImg + classN + "'></span>" + obj.name + "</span>";
-	}
+	}*/
 	/*if (textW > realW * 3) {
 		
 	} else if (textW + 48 < realW) {

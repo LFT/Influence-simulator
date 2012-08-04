@@ -86,62 +86,64 @@
 	</ul>
 </div>
 <div id="faqDialog">
-	<ol>
-		<li> 
-			<b>{% trans "What's the use of this website" %}?</b>
-			<br/> {% trans "It provides a simulation of the building process in Guild Wars 2" %}. 
-			<br/> {% trans "It gives players a way to quickly estimate what is the best thing for them to build. And what will they need to spend in order to do so" %}. 
-		</li>
-		<li>
-			<b>{% trans "Why does nothing works" %}?</b>
-			<br/>{% trans "Probably because your browser does not allow javascript or is to old (it's tested on firefox and chrome only)"%}.
-		</li>
-		<li>
-			<b>{% trans "How does that work" %}?</b>
-			<br/> {% trans "There are two kind of buildings"%}, <span class="exFAQ">{% trans "permanent"%}</span>{% trans "and"%}<span class="exRe">{% trans "temporary"%}</span>.
-			<br/> {% trans "The difference between the two is quite easy to get. Once built, the permanent will be there until deletion. The temporary will be there once and will be available again when the need arise" %}.
-			<br/> {% trans "A building that you can place has a black background. A permanent and constructed building will be grey" %}.
-			<br/> {% trans "If you hover over a building with a blue background, you'll see what are the"%} <span class="exPReq">{% trans "prerequisite"%}</span>.
-			<br/> {% trans "Any building on the build list can be deleted through the click of the red cross in the top right corner" %}.
-		</li>
-		<li>
-			<b>{% trans "What's 'Construction mode'" %}?</b>
-			<br/> {% trans "This mode allows you to put some permanent batiment in a 'already built' mode. This way, you won't have to place them on the list to access their children" %}.
-			<br/> {% trans "In construction mode, you don't need to build buildings one at a time. You can click on all the permanent buildings and all their ancestors are going to be build as well" %}.
-		</li>
-		<li>
-			<b>{% trans "What's represented through"%} "{% trans "Output build order" %}"?</b>
-			<br/>{% trans "It's the order you'll have to put the building in if you only have one list to put all the buildings" %}.
-		</li>
-		<li>
-			<b>{% trans "How does the deletion work" %}?</b>
-			<br/>{% trans "It shows you the elements that are going to be deleted if you click on the cross. To get that it proceeds to a simulation of the following" %}:
+	<div id="accorFaq">
+		<h3><a href="#">{% trans "What's the use of this website" %}?</a></h3>
+		<div>
+			{% trans "It provides a simulation of the building process in Guild Wars 2" %}. <br/> 
+			{% trans "It gives players a way to quickly estimate what is the best thing for them to build. And what will they need to spend in order to do so" %}.
+		</div>
+		<h3><a href="#">{% trans "Why does nothing works" %}?</a></h3>
+		<div>
+			{% trans "Probably because your browser does not allow javascript or is to old (it's tested on firefox and chrome only)"%}.
+		</div>
+
+		<h3><a href="#">{% trans "How does that work" %}?</a></h3>
+		<div>
+			{% trans "There are two kind of buildings"%}, <span class="exFAQ">{% trans "permanent"%}</span>{% trans "and"%}<span class="exRe">{% trans "temporary"%}</span>.<br/>
+			{% trans "The difference between the two is quite easy to get. Once built, the permanent will be there until deletion. The temporary will be there once and will be available again when the need arise" %}.<br/>
+			{% trans "A building that you can place has a black background. A permanent and constructed building will be grey" %}.<br/>
+			{% trans "If you hover over a building with a blue background, you'll see what are the"%} <span class="exPReq">{% trans "prerequisite"%}</span>.<br/>
+			{% trans "Any building on the build list can be deleted through the click of the red cross in the top right corner" %}.
+		</div>
+		<h3><a href="#">{% trans "What's 'Construction mode'" %}?</a></h3>
+		<div>
+			{% trans "This mode allows you to put some permanent batiment in a 'already built' mode. This way, you won't have to place them on the list to access their children" %}.<br/> 
+			{% trans "In construction mode, you don't need to build buildings one at a time. You can click on all the permanent buildings and all their ancestors are going to be build as well" %}.
+		</div>
+
+		<h3><a href="#">{% trans "What's represented through"%} "{% trans "Output build order" %}"?</a></h3>
+		<div>
+			{% trans "It's the order you'll have to put the building in if you only have one list to put all the buildings" %}.
+		</div>
+		<h3><a href="#">{% trans "How does the deletion work" %}?</a></h3>
+		<div>
+			{% trans "It shows you the elements that are going to be deleted if you click on the cross. To get that it proceeds to a simulation of the following" %}:
 			<ul>
 				<li>{% trans "It suppress the building you have your pointer over" %}. </li>
 				<li>{% trans "And then it removes all it's children if it has some" %}.</li>
 				<li>{% trans "After that it'll move all the element to the left to close the gaps and check for all the possible new mistakes (e.g. children built before their parent)" %}.</li>
 				<li>{% trans "And it'll do that until it's good" %}.</li>
 			</ul>
-		</li>
-		<li>
-			<b>{% trans "What about the building speeding process" %}?</b>
-			<br/>{% trans "Yet, I have no idea whatsoever on the way it works in game" %}.
-		</li>
-		<li>
-			<b>{% trans "I have some ideas/remarks/bugs or I'm not happy with some behavior. What do I do" %}?</b>
-			<br/> {% trans "Just use the contact form, it's here for that" %}.
-			<br/> {% trans " Also note that I'm doing that for free, on my spare time. Hence I might not answer (or correct the bugs) quickly" %}.
-		</li>
-		<li>
-			<b>{% trans "What are you using to run this website" %}?</b>
-			<br/>{% trans "It's powered by"%} <a href="http://httpd.apache.org/">apache</a>, <a href='https://www.djangoproject.com/'>django</a>, <a href='http://jquery.com/'>jQuery</a> {% trans "and"%} <a href='http://jqueryui.com/'>jQuery-UI</a>.
-		</li>
-		<li>
-			<b>{% trans "What language are available" %}?</b>
-			<br/>{% trans "So far, only english and french. And that rely on your browser's locale"%}.
+		</div>
+		<h3><a href="#">{% trans "What about the building speeding process" %}?</a></h3>
+		<div>
+			{% trans "Yet, I have no idea whatsoever on the way it works in game" %}.
+		</div>
+		<h3><a href="#">{% trans "I have some ideas/remarks/bugs or I'm not happy with some behavior. What do I do" %}?</a></h3>
+		<div>
+			{% trans "Just use the contact form, it's here for that" %}.<br/> 
+			{% trans " Also note that I'm doing that for free, on my spare time. Hence I might not answer (or correct the bugs) quickly" %}.
+		</div>
+		<h3><a href="#">{% trans "What are you using to run this website" %}?</a></h3>
+		<div>
+			{% trans "It's powered by"%} <a href="http://httpd.apache.org/">apache</a>, <a href='https://www.djangoproject.com/'>django</a>, <a href='http://jquery.com/'>jQuery</a> {% trans "and"%} <a href='http://jqueryui.com/'>jQuery-UI</a>.
+		</div>
+		<h3><a href="#">{% trans "What languages are available" %}?</a></h3>
+		<div>
+			{% trans "So far, only english and french. And that rely on your browser's locale"%}.
 			{% trans "You're welcome if you want to provide another language translation. I can provide easily a list of sentence to be translated"%}.
-		</li>
-	</ol>
+		</div>
+	</div>
 </div>
 
 <div id="buildTooltip">
