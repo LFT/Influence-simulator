@@ -619,7 +619,7 @@ msgstr "Qu'est ce que tu utilises pour faire tourner ce site"
 msgid "It's powered by"
 msgstr "Cela marche grâce à"
 
-msgid "What language are available"
+msgid "What languages are available"
 msgstr "Dans quelles langues ce site est il disponible"
 
 msgid "So far, only english and french. And that rely on your browser's locale"
