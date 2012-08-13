@@ -1,6 +1,5 @@
 from gwSites.influBuild.models import Building
 #this is just here for translation needs
-#from django.utils.translation import ugettext as _
 
 def _(input):
 	return input
@@ -56,22 +55,7 @@ def initDatabase():
 	currentReq = basics.get(shortName = currentFam + '5')
 	Building.objects.create(name = _('WvW Fort +5% Swiftness'), shortName = currentFam + '51', family = currentFam, parent = currentReq, cost = 500, completeDescr = _("For 12 Hrs, any fortification held by your guild in World Vs World will give improved Swiftness to all allies. Lasts 12 hours."))
 	Building.objects.create(name = _('Guild Siege Suit'), shortName = currentFam + '52', family = currentFam, parent = currentReq, cost = 500, timeToBuild = 36, completeDescr = _("Create a Siege Suit that costs less supply to set up than normal. (requires Foundry from Architecture)"))
-	#Economy
-	currentFam = familyIds[2]
-	currentReq = basics.get(shortName = currentFam + '1')
-	Building.objects.create(name = _('+5% Exp Public Banner'), shortName = currentFam + '11', family = currentFam, parent = currentReq, cost = 50, timeToBuild = 4, completeDescr = _("Spawns a guild banner that will give +5% exp to any ally that touches it for 30 min. Stacks with other exp buffs."))
-	Building.objects.create(name = _('+10% Gathering Bonus Banner'), shortName = currentFam + '12', family = currentFam, parent = currentReq, cost = 50, timeToBuild = 4, completeDescr = _("Spawns a guild banner that will give +10% gathering chance to any ally that touches it for 30 min. Stacks with other exp buffs."))
-	#Building.objects.create(name = _('+5% Karma from Events for 3 Days'), shortName = currentFam + '11', family = currentFam, parent = currentReq, completeDescr = _("For 3 days, your guild receives and additional 5% karma from all events."))
-	#Building.objects.create(name = _('+5% Exp from Events for 3 Days'), shortName = currentFam + '12', family = currentFam, parent = currentReq, completeDescr = _("Improves guild experience gain by 5% for 3 days."))
-	currentReq = basics.get(shortName = currentFam + '2')
-	Building.objects.create(name = _('+10% Magic Find Banner'), shortName = currentFam + '21', family = currentFam, parent = currentReq, cost = 50, timeToBuild = 4, completeDescr = _("Spawns a guild banner that will give +10% magic find to any ally that touches it for 30 min. Stacks with other loot buffs."))
-	currentReq = basics.get(shortName = currentFam + '3')
-	Building.objects.create(name = _('+10% Magic Find for 3 Days'), shortName = currentFam + '31', family = currentFam, parent = currentReq, cost = 500, timeToBuild = 36, completeDescr = _("For 3 days, guild members have 10% better chance to find rare loot. Traveling Antique Shows are great!"))
-	Building.objects.create(name = _('+5% Kill exp for 24 Hours'), shortName = currentFam + '32', family = currentFam, parent = currentReq, cost = 500,  completeDescr = _("Imrpove all guild experience gain from kills by 5% for 24h"))
-	currentReq = basics.get(shortName = currentFam + '4')
-	Building.objects.create(name = _('+15% Karma from Events for 24 Hours'), shortName = currentFam + '41', family = currentFam, parent = currentReq, cost = 500, timeToBuild = 48, completeDescr = _("For 24 hours, your guild receives an additional 15% karma from all events."))
-	Building.objects.create(name = _('+10% Gathering Bonus for 48 Hours'), shortName = currentFam + '42', family = currentFam, parent = currentReq, cost = 500, timeToBuild = 32, completeDescr = _("For 48 hours, guild members have 10% better chance to find rare materials from mining, logging, and harvesting."))
-	#Architecture
+	#Architecture 
 	currentFam = familyIds[3]
 	currentReq = basics.get(shortName = currentFam + '1')
 	Building.objects.create(name = _('Guild Workshop'), shortName = currentFam + '11', family = currentFam, parent = currentReq, isRepetable = False, cost = 500, timeToBuild = 48, completeDescr = _("The workshop allows an additional upgrade to be building simultaneously."))
@@ -80,4 +64,22 @@ def initDatabase():
 	currentReq = basics.get(shortName = currentFam + '4')
 	otherReq = Building.objects.create(name = _('Guild Treasure Trove'), shortName = currentFam + '41', family = currentFam, parent = currentReq, isRepetable = False, cost = 5000, timeToBuild = 168, completeDescr = _("Grants access to a 100 slot Guild Vault"))
 	currentReq = basics.get(shortName = currentFam + '5')
-	Building.objects.create(name = _('Deep Cave'), shortName = currentFam + '51', family = currentFam, parent = currentReq, otherDep = otherReq, isRepetable = False, cost = 5000, timeToBuild = 168, completeDescr = _("The Deep Cave will expand your treasure trove by another 100 slots."))
+	Building.objects.create(name = _('Deep Cave'), shortName = currentFam + '51', family = currentFam, parent = currentReq, otherDep = otherReq, isRepetable = False, cost = 5000, timeToBuild = 168, completeDescr = _("The Deep Cave will expand your treasure trove by another 100 slots."))	
+	#Economy
+	currentFam = familyIds[2]
+	currentReq = basics.get(shortName = currentFam + '1')
+	Building.objects.create(name = _('+5% Exp Public Banner'), shortName = currentFam + '11', family = currentFam, parent = currentReq, cost = 50, timeToBuild = 4, completeDescr = _("Spawns a guild banner that will give +5% exp to any ally that touches it for 30 min. Stacks with other exp buffs."))
+	Building.objects.create(name = _('+10% Gathering Bonus Banner'), shortName = currentFam + '12', family = currentFam, parent = currentReq, cost = 50, timeToBuild = 4, completeDescr = _("Spawns a guild banner that will give +10% gathering chance to any ally that touches it for 30 min. Stacks with other exp buffs."))
+	#Building.objects.create(name = _('+5% Karma from Events for 3 Days'), shortName = currentFam + '11', family = currentFam, parent = currentReq, completeDescr = _("For 3 days, your guild receives and additional 5% karma from all events."))
+	#Building.objects.create(name = _('+5% Exp from Events for 3 Days'), shortName = currentFam + '12', family = currentFam, parent = currentReq, completeDescr = _("Improves guild experience gain by 5% for 3 days."))
+	otherReq = Building.objects.get(shortName = "Arc21")
+	currentReq = basics.get(shortName = currentFam + '2')
+	Building.objects.create(name = _('+10% Magic Find Banner'), shortName = currentFam + '21', family = currentFam, parent = currentReq, cost = 50, timeToBuild = 4, completeDescr = _("Spawns a guild banner that will give +10% magic find to any ally that touches it for 30 min. Stacks with other loot buffs."))
+	Building.objects.create(name = _('Vault Transport'), shortName = currentFam + '22', family = currentFam, parent = currentReq, otherDep = otherReq, cost = 50, timeToBuild = 6, completeDescr = _("Summons the Guild Vault to your location for easy access. Must have vault permissions."))
+	currentReq = basics.get(shortName = currentFam + '3')
+	Building.objects.create(name = _('+10% Magic Find for 3 Days'), shortName = currentFam + '31', family = currentFam, parent = currentReq, cost = 500, timeToBuild = 36, completeDescr = _("For 3 days, guild members have 10% better chance to find rare loot. Traveling Antique Shows are great!"))
+	Building.objects.create(name = _('+5% Kill exp for 24 Hours'), shortName = currentFam + '32', family = currentFam, parent = currentReq, cost = 500,  completeDescr = _("Imrpove all guild experience gain from kills by 5% for 24h"))
+	currentReq = basics.get(shortName = currentFam + '4')
+	Building.objects.create(name = _('+15% Karma from Events for 24 Hours'), shortName = currentFam + '41', family = currentFam, parent = currentReq, cost = 500, timeToBuild = 48, completeDescr = _("For 24 hours, your guild receives an additional 15% karma from all events."))
+	Building.objects.create(name = _('+10% Gathering Bonus for 48 Hours'), shortName = currentFam + '42', family = currentFam, parent = currentReq, cost = 500, timeToBuild = 32, completeDescr = _("For 48 hours, guild members have 10% better chance to find rare materials from mining, logging, and harvesting."))
+	

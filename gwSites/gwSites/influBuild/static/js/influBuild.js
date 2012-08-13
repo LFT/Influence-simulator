@@ -310,7 +310,7 @@ $(function () {
 		"width": "auto",
 		"height": "auto"
 	});
-	
+
 	$("#accorFaq").accordion();
 	$("#faqDialog").dialog({
 		"autoOpen": false,
@@ -372,7 +372,7 @@ function initObjects() {
 /* Drop */
 /* **** */
 function addObjectOnLine(obj, line, index, isDrop) {
-	var classN, lh, textW, numLine, realW, innerText, info, innerImg, currentDay = Math.floor(iBV.lineTime[index] / 24);
+	var classN, lh, numLine, realW, innerText, info, innerImg, currentDay = Math.floor(iBV.lineTime[index] / 24);
 	if (typeof iBV.dayCost[currentDay] !== 'undefined') {
 		iBV.dayCost[currentDay] += obj.cost;
 	} else {
@@ -396,27 +396,24 @@ function addObjectOnLine(obj, line, index, isDrop) {
 	}
 	/* table */
 	realW = obj.time * iBV.tc;
-	$("#widthTester").width(Math.max(realW - 25,12));
-	numLine = $("#widthTester").text(obj.name).height()/10;
-	console.log(obj.name , numLine)
-	//textW = $("#widthTester").text(obj.name).width();
-	//
+	$("#widthTester").width(Math.max(realW - 25, 12));
+	numLine = $("#widthTester").text(obj.name).height() / 10;
+	console.log(obj.name, numLine);
 	info = extractIdInfo(obj.myDiv[0].id);
 	innerImg = "<span  style='background-position:" + (info.r - 1) * -48 + "px " + (iBV.tltOf[info.f] + info.l) * -48 + "px;' class='imgLine";
 	lh = "";
-	//$("#innerTooltipImg").css("", );
-	switch (numLine){
+	switch (numLine) {
 	case 3:
 		lh = "15";
 	case 2:
 		if (lh === "") {
 			lh = "25";
 		}
-		classN = " multiLine";	
+		classN = " multiLine";
 	case 1:
 		if (lh === "") {
 			lh = "50";
-			classN = " singleLine";		
+			classN = " singleLine";
 		}
 		innerText = "<span class='ib lh" + lh + "'>" + innerImg + classN + "'></span>" + obj.name + "</span>";
 		break;
@@ -587,6 +584,14 @@ function highLightRec(item, isAdd) {
 	}
 	if (item.otherParent !== "" && (!item.otherParent.myDiv.hasClass("inUse") || !isAdd)) {
 		highLightRec(item.otherParent, isAdd);
+		var fam = getFamily(item.otherParent.myDiv[0].id);
+		if (getFamily(item.myDiv[0].id) !== fam) {
+			if (isAdd) {
+				$("#" + fam).show();
+			} else {
+				$("#" + fam).hide();
+			}
+		}
 	}
 }
 
