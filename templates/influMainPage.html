@@ -44,7 +44,7 @@
 </div>
 <div id="buildingContent">
 	<div id="bCaccordion">
-	{% for fam, builds in listFam.items %}
+	{% for fam, builds in listFam.items reversed%}
 		<h3 class="acc_header" id='h3{{fam|slice:":3"}}'><a href="#">{% trans fam %}</a></h3>
 		<div id='{{fam|slice:":3"}}' class="family">
 		{% for build in builds %}
