@@ -1,21 +1,21 @@
-/*ol{
-	list-style:upper-roman;
-}
-
-ol > li{
-	margin-bottom:5px;
-}*/
 .title,.exCol,.colFam {
 	float:left;
 }
-#bottomNotes, .family, #buildingContent{
+#footer, .family, #buildingContent{
 	clear:left;
 }
 body{
 	font-size: 9pt;
 	cursor:default;
+	background-attachment: fixed;
+	background-image: url("/static/img/Vigil_Castle.png");
+	background-size: cover;
 }
 
+#footer{
+	color: #666666;
+	text-align: center;
+}
 .ib, .line > div, .styler, #bCaccordion,.styler .imgLine{
 	display:inline-block;
 }
@@ -36,16 +36,7 @@ body{
 	background: rgba(40, 196, 53, 0.4);/*#28C435;*/
 }
 
-/*div[id^="buildList"]:not(.enabledList) span{
-}
 
-.enabledList span{
-}
-*/
-#buttonDiv {
-	margin:15px;
-	text-align:center;
-}
 #exitCM {
 	display:none;
 }
@@ -349,3 +340,30 @@ body{
 	display:none;
 	word-wrap:break-word;
 }
+
+/* Buttons part*/
+
+#buttonDiv {
+	text-align:center;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	padding: 5px;
+}
+#buttonDiv > input {
+	margin: 5px 10px;
+	width: 300px;
+}
+.imgBtn{
+	width:150px;
+	position:absolute;
+	opacity:0.2;
+}
+#leftImg{
+	left:0;
+	-moz-transform:rotate(-20deg);
+}
+#rightImg{
+	right:0;
+	-moz-transform:rotate(20deg) scaleX(-1);
+}
+
