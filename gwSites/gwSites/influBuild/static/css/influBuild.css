@@ -360,10 +360,15 @@ body{
 }
 #leftImg{
 	left:0;
+	tranform:rotate(-20deg);
 	-moz-transform:rotate(-20deg);
+	-webkit-transform:rotate(-20deg);
+
 }
 #rightImg{
 	right:0;
+	transform:rotate(20deg) scaleX(-1);
 	-moz-transform:rotate(20deg) scaleX(-1);
+	-webkit-transform:rotate(20deg) scaleX(-1);
 }
 
