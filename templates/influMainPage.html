@@ -25,13 +25,17 @@
 	</script>
 </head>
 {% spaceless %}<body>
+
 <div id="buttonDiv">
+	<img class="imgBtn" id="leftImg" src="{{ STATIC_URL }}img/withColors.png" />
+	<img class="imgBtn" id="rightImg" src="{{ STATIC_URL }}img/withColors.png" />
 	<input type="button" value="{% trans "Reset and enter Construction Mode"%}" id="constrMod" />
 	<input type="button" value="{% trans "Exit Construction Mode"%}" id="exitCM" />
-	<input type="button" value="{% trans "Reset"%}" id="reset"/>
 	<input type="button" value="{% trans "Get a link to the current status"%}" id="linkOut"/>
-	<input type="button" value="{% trans "Output build order"%}" id="printOut"/>
 	<input type="button" value="{% trans "FAQ"%}" id="showFAQ"/>
+	<br/>
+	<input type="button" value="{% trans "Reset"%}" id="reset"/>
+	<input type="button" value="{% trans "Output build order"%}" id="printOut"/>
 	<input type="button" value="{% trans "Contact"%}" id="contact"/>
 </div>
 <div id="influBuildList">
@@ -77,13 +81,10 @@
 		<div class="exCF exBor preReq">{% trans "You need me for that thing" %}</div>
 	</div>
 </div>
-<div id="bottomNotes">
-	{% trans "Some side notes" %}
-	<ul>
-		<li> {% trans "In construction mode, you can only build permanent buildings" %}.</li>
-		<li> {% trans "The value for levels 4 and 5 are only a guess and set to : 7500 influence / 5 days and 10000 influence / 7 days" %}.</li>
-		<li> {% trans "All the datas are based on those found in the game beta and on the" %} <a href='http://wiki.guildwars2.com/wiki/Main_Page'>{% trans "Guild Wars 2 Wiki" %}</a>.</li>
-	</ul>
+<div id="footer">
+© 2012 ArenaNet, Inc. All rights reserved. NCsoft, the interlocking NC logo, ArenaNet, Guild Wars, Guild Wars Factions, Guild Wars Nightfall, Guild Wars: Eye of the North, Guild Wars 2, and all associated logos and designs are trademarks or registered trademarks of NCsoft Corporation. All other trademarks are the property of their respective owners.
+<br/>
+{% trans "Website made by Pierre-Yves Cladière. Anyone is free to use it." %} 
 </div>
 <div id="faqDialog">
 	<div id="accorFaq">
@@ -108,7 +109,8 @@
 		<h3><a href="#">{% trans "What's 'Construction mode'" %}?</a></h3>
 		<div>
 			{% trans "This mode allows you to put some permanent batiment in a 'already built' mode. This way, you won't have to place them on the list to access their children" %}.<br/> 
-			{% trans "In construction mode, you don't need to build buildings one at a time. You can click on all the permanent buildings and all their ancestors are going to be build as well" %}.
+			{% trans "In construction mode, you don't need to build buildings one at a time. You can click on all the permanent buildings and all their ancestors are going to be build as well" %}. <br/>
+			{% trans "In construction mode, you can only build permanent buildings" %}.
 		</div>
 
 		<h3><a href="#">{% trans "What's represented through"%} "{% trans "Output build order" %}"?</a></h3>
@@ -128,6 +130,13 @@
 		<h3><a href="#">{% trans "What about the building speeding process" %}?</a></h3>
 		<div>
 			{% trans "Yet, I have no idea whatsoever on the way it works in game" %}.
+		</div>
+		<h3><a href="#">{% trans "Does this site breaks NDA" %}?</a></h3>
+		<div>
+			{% trans "Short answer: No" %}.<br/>
+			{% trans "The value for levels 4 and 5 are only a guess and set to : 7500 influence / 5 days and 10000 influence / 7 days" %}.<br/>
+			{% trans "All the datas are based on those found in the game beta and on the" %} <a href='http://wiki.guildwars2.com/wiki/Main_Page'>{% trans "Guild Wars 2 Wiki" %}</a>.
+
 		</div>
 		<h3><a href="#">{% trans "I have some ideas/remarks/bugs or I'm not happy with some behavior. What do I do" %}?</a></h3>
 		<div>

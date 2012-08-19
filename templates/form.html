@@ -1,7 +1,7 @@
 {% load i18n %}
 <div id="contactDiv">
 	<h3> {% trans "Contact Form" %}</h3>
-	<form action="{% url contact %}" method="post" id="contactForm">
+	<form action="{% url 'contact' %}" method="post" id="contactForm">
 		<div id="formInnerDiv">
 			{% csrf_token %}
 			{{ form.non_field_errors }}
