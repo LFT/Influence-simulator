@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-08-05 02:01+0200\n"
+"POT-Creation-Date: 2012-08-19 16:57+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1)\n"
 
+#: gwSites/gwSites/influBuild/initDb.py:24
 msgid "+5% Karma Banner"
 msgstr "Bannière de Karma +5%"
 
+#: gwSites/gwSites/influBuild/initDb.py:24
 msgid ""
 "Spawns a guild banner that will give +5% karma buff to any ally that touches "
 "it for 30 minutes."
@@ -27,9 +29,11 @@ msgstr ""
 "Crée une bannière de guilde qui confère pendant 30 minutes un bonus de karma "
 "de 5% à tout allié qui la touche."
 
+#: gwSites/gwSites/influBuild/initDb.py:25
 msgid "Guild Emblem Template"
 msgstr "Modèle d'emblème de guilde"
 
+#: gwSites/gwSites/influBuild/initDb.py:25
 msgid ""
 "Allows guild members to create a permanent guild emblem design at the Guild "
 "Registrar for use on banners and other displays."
@@ -37,9 +41,11 @@ msgstr ""
 "Permet aux membres de la guilde de créer un blason de guilde permanent "
 "destiné aux bannières et autres affichages auprès du Greffier de guilde."
 
+#: gwSites/gwSites/influBuild/initDb.py:27
 msgid "+5% Influence for 24Hrs."
 msgstr "Influence +5% pendant 24 heures"
 
+#: gwSites/gwSites/influBuild/initDb.py:27
 msgid ""
 "Improves guild influence gain in PvE for 24 hours. Stacks with other "
 "Influence boosts"
@@ -47,9 +53,11 @@ msgstr ""
 "Augmente l'influence gagnée par la guilde en JcE de 5% pendant 24heures. "
 "Cumulable avec d'autres bonus d'influence."
 
+#: gwSites/gwSites/influBuild/initDb.py:28
 msgid "Road Marker"
 msgstr "Repère routier"
 
+#: gwSites/gwSites/influBuild/initDb.py:28
 msgid ""
 "Spawns a road marker that will give 20 secondes of swiftness to any ally "
 "that touches it."
@@ -57,9 +65,11 @@ msgstr ""
 "Créer un repère routier de guilde qui confère 20 secondes de rapidité à tout "
 "allié qui le touche."
 
+#: gwSites/gwSites/influBuild/initDb.py:29
 msgid "Guild Armorer Contract"
 msgstr "Contrat d'armurier de Guilde"
 
+#: gwSites/gwSites/influBuild/initDb.py:29
 msgid ""
 "Allows guild members to purchase armor items that display the guild emblem. "
 "Vendors are available in major cities. (Requires Politics - Emblem Template)"
@@ -68,9 +78,11 @@ msgstr ""
 "blason de la guilde. Des marchands sont disponibles dans les villes "
 "principales.(Requiert Politique - modèle de blason)"
 
+#: gwSites/gwSites/influBuild/initDb.py:31
 msgid "Guild Weapons Contract"
 msgstr "Contrat d'armes de Guilde"
 
+#: gwSites/gwSites/influBuild/initDb.py:31
 msgid ""
 "Allows guild members to purchase weapon items that display the guild emblem. "
 "Vendors are available in major cities. (Requires Politics - Emblem Template)"
@@ -79,9 +91,11 @@ msgstr ""
 "guilde. Des marchands sont disponibles dans les villes principales. "
 "(Requiert Politique - Modèle de Blason)"
 
+#: gwSites/gwSites/influBuild/initDb.py:32
 msgid "Contract Asuran Outsourcing"
 msgstr "Contrat de sous-traintance Asura"
 
+#: gwSites/gwSites/influBuild/initDb.py:32
 msgid ""
 "A freelance Asuran Lab will help you develop one upgrade without using up "
 "one of your work slots."
@@ -89,9 +103,11 @@ msgstr ""
 "Un laboratoire asura indépendant vous aide à développer une amélioration "
 "sans utiliser l'un de vos emplacement de travail."
 
+#: gwSites/gwSites/influBuild/initDb.py:33
 msgid "+10% Influence from Events"
 msgstr "+10% d'Influence pour les Événements"
 
+#: gwSites/gwSites/influBuild/initDb.py:33
 msgid ""
 "Hire an event herald to increase the influence your guild earns from doing "
 "events for 24 hours."
@@ -99,9 +115,11 @@ msgstr ""
 "Embauche un héraut d'évènements qui augmente pendant 24 heures l'influence "
 "obtenue par votre guilde lors des évènements."
 
+#: gwSites/gwSites/influBuild/initDb.py:35
 msgid "+20% Dungeon Influence for 24 Hrs"
 msgstr "+20% d'Influence des Donjons sur 24h"
 
+#: gwSites/gwSites/influBuild/initDb.py:35
 msgid ""
 "A dungeon survey before beginning will increase dungeon influence reward by "
 "20%. Lasts 24 hours."
@@ -109,9 +127,11 @@ msgstr ""
 "Le repérage préalable d'un donjon augmente les récompenses d'influence de ce "
 "dernier de 20% Dure 24 heures."
 
+#: gwSites/gwSites/influBuild/initDb.py:36
 msgid "Guild Banquet"
 msgstr "Banquet de Guilde"
 
+#: gwSites/gwSites/influBuild/initDb.py:36
 msgid ""
 "Spawns a banquet table, keg, and various other party items which players can "
 "eat and drink from. Lasts 1 hour."
@@ -119,18 +139,19 @@ msgstr ""
 "Crée une table de banquet, un tonneau et divers autres objet festifs "
 "permettant aux joueurs de manger et de boire. Dure 1 heure."
 
+#: gwSites/gwSites/influBuild/initDb.py:40
 msgid "+10% PvP Influence for 24 Hours"
 msgstr "+10% Influence JcJ pendant 24h"
 
-
+#: gwSites/gwSites/influBuild/initDb.py:40
 msgid "All influence earned in pvp is increased by 10% for 24 hours."
 msgstr "Augmente toute influence gagnée en JcJ est de 10% pendant 24 heures."
 
-
+#: gwSites/gwSites/influBuild/initDb.py:42
 msgid "WvW Fort +10% Experience"
 msgstr "Fort McM - Expérience +10%"
 
-
+#: gwSites/gwSites/influBuild/initDb.py:42
 msgid ""
 "For 12 Hrs, any fortification held by your guild in World Vs World will give "
 "increased exp to defending allies. Lasts 12 hours."
@@ -138,10 +159,11 @@ msgstr ""
 "Pendant 12 heures, toute fortification tenue par votre guilde en Monde "
 "contre Monde confère un surcroît d'expérience aux alliés en défense."
 
+#: gwSites/gwSites/influBuild/initDb.py:43
 msgid "WvW Fort +10% Magic Find"
 msgstr "Fort McM +10% Découverte de Magie"
 
-
+#: gwSites/gwSites/influBuild/initDb.py:43
 msgid ""
 "For 12 Hrs, any fortification held by your guild in World Vs World will give "
 "allies a better chance to discover rare loot. Lasts 12 hours."
@@ -150,10 +172,11 @@ msgstr ""
 "contre Monde confère aux alliés de meilleures chances de découvrir des "
 "butins rares."
 
+#: gwSites/gwSites/influBuild/initDb.py:44
 msgid "WvW Fort +5 Supply"
 msgstr "Fort McM +5 en Ravitaillement"
 
-
+#: gwSites/gwSites/influBuild/initDb.py:44
 msgid ""
 "For 12 Hrs, any fortification held by your guild in World Vs World will give "
 "improved Supply to all allies. Lasts 12 hours."
@@ -161,9 +184,11 @@ msgstr ""
 "Pendant 12 heures, toute fortification tenuepar votre guilde en Monde contre "
 "Monde octroie un ravitaillement amélioré à tous vos alliés."
 
+#: gwSites/gwSites/influBuild/initDb.py:47
 msgid "WvW Fort +40 Vitality"
 msgstr "Fort McM +40 en Vitalité"
 
+#: gwSites/gwSites/influBuild/initDb.py:47
 msgid ""
 "For 12 Hrs, any fortification held by your guild in World Vs World will give "
 "improved Vitality to all allies. Lasts 12 hours."
@@ -171,9 +196,11 @@ msgstr ""
 "Pendant 12 heures, toute fortification tenue par votre guilde en Monde "
 "contre Monde octroie une Vitallité améliorée à tous les alliés."
 
+#: gwSites/gwSites/influBuild/initDb.py:48
 msgid "WvW Fort +40 Toughness"
 msgstr "Fort McM +40 en Robustesse"
 
+#: gwSites/gwSites/influBuild/initDb.py:48
 msgid ""
 "For 12 Hrs, any fortification held by your guild in World Vs World will give "
 "improved Toughness to all allies. Lasts 12 hours."
@@ -181,9 +208,11 @@ msgstr ""
 "Pendant 12 heures, toute fortification tenu par votre guilde en Monde contre "
 "Monde octroie une Robustesse améliorée à tous les alliés."
 
+#: gwSites/gwSites/influBuild/initDb.py:49
 msgid "WvW Fort +40 Power"
 msgstr "Fort McM +40 en Puissance"
 
+#: gwSites/gwSites/influBuild/initDb.py:49
 msgid ""
 "For 12 Hrs, any fortification held by your guild in World Vs World will give "
 "improved Power to all allies. Lasts 12 hours."
@@ -191,9 +220,11 @@ msgstr ""
 "Pendant 12 heures, toute fortification tenu par votre guilde en Monde contre "
 "Monde octroie une Puissance améliorée à tous les alliés."
 
+#: gwSites/gwSites/influBuild/initDb.py:50
 msgid "WvW Fort +40 Precision"
 msgstr "Fort McM +40 en Précision"
 
+#: gwSites/gwSites/influBuild/initDb.py:50
 msgid ""
 "For 12 Hrs, any fortification held by your guild in World Vs World will give "
 "improved Precision to all allies. Lasts 12 hours."
@@ -201,9 +232,11 @@ msgstr ""
 "Pendant 12 heures, toute fortification tenu par votre guilde en Monde contre "
 "Monde octroie une Précision améliorée à tous les alliés."
 
+#: gwSites/gwSites/influBuild/initDb.py:52
 msgid "WvW Fort +10% Healing"
 msgstr "Fort McM +10% en Guérison"
 
+#: gwSites/gwSites/influBuild/initDb.py:52
 msgid ""
 "For 12 Hrs, any fortification held by your guild in World Vs World will give "
 "improved Healing to all allies. Lasts 12 hours."
@@ -211,9 +244,11 @@ msgstr ""
 "Pendant 12 heures, toute fortification tenu par votre guilde en Monde contre "
 "Monde octroie une Guérison améliorée à tous les alliés."
 
+#: gwSites/gwSites/influBuild/initDb.py:53
 msgid "WvW Fort +10% Player Health"
 msgstr "Fort McM +10% à la vie du Joueur"
 
+#: gwSites/gwSites/influBuild/initDb.py:53
 msgid ""
 "For 12 Hrs, any fortification held by your guild in World Vs World will give "
 "improved Health to all allies. Lasts 12 hours."
@@ -221,9 +256,11 @@ msgstr ""
 "Pendant 12 heures, toute fortification tenu par votre guilde en Monde contre "
 "Monde octroie une Santé améliorée à tous les alliés."
 
+#: gwSites/gwSites/influBuild/initDb.py:54
 msgid "Guild Catapult"
 msgstr "Catapulte de Guilde"
 
+#: gwSites/gwSites/influBuild/initDb.py:54
 msgid ""
 "Create a Catapult Siege engine that costs less supply to set up than normal. "
 "(requires Foundry from Architecture)"
@@ -231,9 +268,11 @@ msgstr ""
 "Crée une catapulte qui coute moins de ressources que son équivalent "
 "ordinaire. (requiert la Fonderie de l'Architecture)"
 
+#: gwSites/gwSites/influBuild/initDb.py:56
 msgid "WvW Fort +5% Swiftness"
 msgstr "Fort McM +5% Rapidité"
 
+#: gwSites/gwSites/influBuild/initDb.py:56
 msgid ""
 "For 12 Hrs, any fortification held by your guild in World Vs World will give "
 "improved Swiftness to all allies. Lasts 12 hours."
@@ -241,9 +280,11 @@ msgstr ""
 "Pour 12 heures, toute fortification tenu par votre guilde en Monde contre "
 "Monde octroie de la rapidité améliorée à tous les alliés."
 
+#: gwSites/gwSites/influBuild/initDb.py:57
 msgid "Guild Siege Suit"
 msgstr "Habit de siège de la guilde"
 
+#: gwSites/gwSites/influBuild/initDb.py:57
 msgid ""
 "Create a Siege Suit that costs less supply to set up than normal. (requires "
 "Foundry from Architecture)"
@@ -251,35 +292,45 @@ msgstr ""
 "Crée une tenu de siège qui coûte moins de ressources que son équivalent "
 "ordinaire. (requiert la Fonderie de l'Architecture)"
 
+#: gwSites/gwSites/influBuild/initDb.py:61
 msgid "Guild Workshop"
 msgstr "Atelier de Guilde"
 
+#: gwSites/gwSites/influBuild/initDb.py:61
 msgid ""
 "The workshop allows an additional upgrade to be building simultaneously."
 msgstr ""
 "L'atelier permet la construction simultanée d'une amélioration additionelle."
 
+#: gwSites/gwSites/influBuild/initDb.py:63
 msgid "Guild Vault"
 msgstr "Caisse de la Guilde"
 
+#: gwSites/gwSites/influBuild/initDb.py:63
 msgid "Grants access to a 50 slot Guild Vault and gold storage"
 msgstr "Permet d'accéder à un coffre de guilde de 50 emplacements"
 
+#: gwSites/gwSites/influBuild/initDb.py:65
 msgid "Guild Treasure Trove"
 msgstr "Trésor de la Guilde"
 
+#: gwSites/gwSites/influBuild/initDb.py:65
 msgid "Grants access to a 100 slot Guild Vault"
 msgstr "Permet d'accéder à un coffre de guilde de 100 emplacements"
 
+#: gwSites/gwSites/influBuild/initDb.py:67
 msgid "Deep Cave"
 msgstr "Grotte profonde"
 
+#: gwSites/gwSites/influBuild/initDb.py:67
 msgid "The Deep Cave will expand your treasure trove by another 100 slots."
 msgstr "La Grotte profonde ajoute 100 emplacements à votre trésors."
 
+#: gwSites/gwSites/influBuild/initDb.py:71
 msgid "+5% Exp Public Banner"
 msgstr "Bannière Publique +5% d'Exp"
 
+#: gwSites/gwSites/influBuild/initDb.py:71
 msgid ""
 "Spawns a guild banner that will give +5% exp to any ally that touches it for "
 "30 min. Stacks with other exp buffs."
@@ -287,9 +338,11 @@ msgstr ""
 "Invoque une bannière de guilde qui procure +5% d'xp à chaque alliés qui la "
 "touche pendant 30 minutes. Se cumulte avec d'autres bonus à l'expérience."
 
+#: gwSites/gwSites/influBuild/initDb.py:72
 msgid "+10% Gathering Bonus Banner"
 msgstr "Bannière +10% Bonus de récolte"
 
+#: gwSites/gwSites/influBuild/initDb.py:72
 msgid ""
 "Spawns a guild banner that will give +10% gathering chance to any ally that "
 "touches it for 30 min. Stacks with other exp buffs."
@@ -297,9 +350,11 @@ msgstr ""
 "Crée une bannière de guilde qui confère pendant 30 minutes un bonus de "
 "chance de récolte de 10% à tout allié qui la touche."
 
+#: gwSites/gwSites/influBuild/initDb.py:77
 msgid "+10% Magic Find Banner"
 msgstr "Bannière de découvert de magie +10%"
 
+#: gwSites/gwSites/influBuild/initDb.py:77
 msgid ""
 "Spawns a guild banner that will give +10% magic find to any ally that "
 "touches it for 30 min. Stacks with other loot buffs."
@@ -308,18 +363,23 @@ msgstr ""
 "découverte de magie de 10% à tout allié qui la touche. Cumulable avec "
 "d'autres bonus de butin."
 
+#: gwSites/gwSites/influBuild/initDb.py:78
 msgid "Vault Transport"
 msgstr "Transport de Coffre"
 
+#: gwSites/gwSites/influBuild/initDb.py:78
 msgid ""
 "Summons the Guild Vault to your location for easy access. Must have vault "
 "permissions."
 msgstr ""
-"Invoque le Coffre de guilde près de vous. Nécessite les droits d'accès au coffre."
+"Invoque le Coffre de guilde près de vous. Nécessite les droits d'accès au "
+"coffre."
 
+#: gwSites/gwSites/influBuild/initDb.py:80
 msgid "+10% Magic Find for 3 Days"
 msgstr "+10% Découverte de Magie sur 3 jours"
 
+#: gwSites/gwSites/influBuild/initDb.py:80
 msgid ""
 "For 3 days, guild members have 10% better chance to find rare loot. "
 "Traveling Antique Shows are great!"
@@ -328,26 +388,32 @@ msgstr ""
 "trouver des butins rares. Les expositions itinérantes d'antiquité sont "
 "formidable !"
 
+#: gwSites/gwSites/influBuild/initDb.py:81
 msgid "+5% Kill exp for 24 Hours"
 msgstr "+5% d'exp pour chaque tué pendant 24h"
 
+#: gwSites/gwSites/influBuild/initDb.py:81
 msgid "Imrpove all guild experience gain from kills by 5% for 24h"
 msgstr ""
 "Augmente l'influence gagnée par la guilde de 5% pour chaque ennemi tué "
 "pendant 24 heures."
 
+#: gwSites/gwSites/influBuild/initDb.py:83
 msgid "+15% Karma from Events for 24 Hours"
 msgstr "+15% Karma des Événements sur 24h"
 
+#: gwSites/gwSites/influBuild/initDb.py:83
 msgid ""
 "For 24 hours, your guild receives an additional 15% karma from all events."
 msgstr ""
 "Pendant 24 heures, votre guilde reçoit 15% de Karma additionnel de tous les "
 "évènements."
 
+#: gwSites/gwSites/influBuild/initDb.py:84
 msgid "+10% Gathering Bonus for 48 Hours"
 msgstr "+10% bonus pour la Récolte sur 48 heures"
 
+#: gwSites/gwSites/influBuild/initDb.py:84
 msgid ""
 "For 48 hours, guild members have 10% better chance to find rare materials "
 "from mining, logging, and harvesting."
@@ -358,118 +424,132 @@ msgstr ""
 # ##############################
 # TEMPLATE 
 # #############################
+#: templates/form.html:3
 msgid "Contact Form"
 msgstr "Formulaire de contact"
 
+#: templates/form.html:10
 msgid "Subject"
 msgstr "Sujet"
 
+#: templates/form.html:15
 msgid "Sender"
 msgstr "Expéditeur"
 
+#: templates/form.html:20
 msgid "Message"
 msgstr "Message"
 
+#: templates/form.html:24
 msgid "Send"
 msgstr "Envoyer"
 
+#: templates/form.html:28
 msgid "Thanks !"
 msgstr "Merci !"
 
+#: templates/influMainPage.html:6
 msgid "Elaborate your guild builds"
 msgstr "Élaborez le plan de construcion de votre guilde"
 
+#: templates/influMainPage.html:33
 msgid "Reset and enter Construction Mode"
 msgstr "Reset et entre en mode construction"
 
+#: templates/influMainPage.html:34
 msgid "Exit Construction Mode"
 msgstr "Sortie du mode construction"
 
-msgid "Reset"
-msgstr "Reset"
-
+#: templates/influMainPage.html:35
 msgid "Get a link to the current status"
 msgstr "Obtenir un lien vers ce stade de construction"
 
-msgid "Output build order"
-msgstr "Afficher l'ordre de construction"
-
+#: templates/influMainPage.html:36
 msgid "FAQ"
 msgstr "FAQ"
 
+#: templates/influMainPage.html:38
+msgid "Reset"
+msgstr "Reset"
+
+#: templates/influMainPage.html:39 templates/influMainPage.html.py:117
+msgid "Output build order"
+msgstr "Afficher l'ordre de construction"
+
+#: templates/influMainPage.html:40
 msgid "Contact"
 msgstr "Contact"
 
+#: templates/influMainPage.html:43
 msgid "Time"
 msgstr "Temps"
 
+#: templates/influMainPage.html:44
 msgid "Basic build Line"
 msgstr "Construction basique"
 
+#: templates/influMainPage.html:45
 msgid "Workshop build line"
 msgstr "Construction dans l'atelier"
 
+#: templates/influMainPage.html:46
 msgid "Asura build line"
 msgstr "Construction asurane"
 
+#: templates/influMainPage.html:47
 msgid "Influence spent for the current day"
 msgstr "Influence dépensée ce jour"
 
+#: templates/influMainPage.html:48
 msgid "Total Cost up to the current day"
 msgstr "Coût total à ce jour"
 
+#: templates/influMainPage.html:72
 msgid "Legend"
 msgstr "Légende"
 
+#: templates/influMainPage.html:74
 msgid "You can place me"
 msgstr "Je suis plaçable"
 
+#: templates/influMainPage.html:75
 msgid "Already built, can't do it again"
 msgstr "Déjà construit, inutile de le refaire"
 
+#: templates/influMainPage.html:76
 msgid "You can't use me yet"
 msgstr "Je ne suis pas plaçable acutellement"
 
+#: templates/influMainPage.html:77
 msgid "I might be deleted"
 msgstr "Je disparaitrais sans doute."
 
+#: templates/influMainPage.html:80
 msgid "I'm a permanent building"
 msgstr "Je suis un bâtiment permanent"
 
+#: templates/influMainPage.html:81
 msgid "I'm not"
 msgstr "Je ne le suis pas"
 
+#: templates/influMainPage.html:82
 msgid "You need me for that thing"
 msgstr "Je suis requis pour cela"
 
-msgid "Some side notes"
-msgstr "Quelques notes"
+#: templates/influMainPage.html:88
+msgid "Website made by Pierre-Yves Cladière. Anyone is free to use it."
+msgstr "Site réalisé par Pierre-Yves Cladière. Tout le monde est libre de l'utiliser."
 
-msgid "In construction mode, you can only build permanent buildings"
-msgstr "En mode de construction, seul les bâtiments permanents sont placables"
-
-msgid ""
-"The value for levels 4 and 5 are only a guess and set to : 7500 influence / "
-"5 days and 10000 influence / 7 days"
-msgstr ""
-"Les valeurs utilisées pour les niveaux 4 et 5 sont des suppositions. Elles "
-"sont respectivement de 7500 / 5 jour et 10000 influence / 7 jours"
-
-msgid "All the datas are based on those found in the game beta and on the"
-msgstr ""
-"Toutes les données sont extraites des infos trouvables sur la bêta du jeu et "
-"sur le"
-
-msgid "Guild Wars 2 Wiki"
-msgstr "wiki de Guild Wars 2"
-
+#: templates/influMainPage.html:92
 msgid "What's the use of this website"
 msgstr "Quel est le but de ce site"
 
+#: templates/influMainPage.html:94
 msgid "It provides a simulation of the building process in Guild Wars 2"
 msgstr ""
 "Il fournit un moyen de simuler le processus de construction dans Guild Wars 2"
 
+#: templates/influMainPage.html:95
 msgid ""
 "It gives players a way to quickly estimate what is the best thing for them "
 "to build. And what will they need to spend in order to do so"
@@ -478,9 +558,11 @@ msgstr ""
 "bâtiments à construire pour répondre à leurs besoins. Et de savoir ce que "
 "cela leur en coûtera"
 
+#: templates/influMainPage.html:97
 msgid "Why does nothing works"
 msgstr "Pourquoi rien ne marche"
 
+#: templates/influMainPage.html:99
 msgid ""
 "Probably because your browser does not allow javascript or is to old (it's "
 "tested on firefox and chrome only)"
@@ -488,21 +570,27 @@ msgstr ""
 "Soit car votre navigateur ne supporte pas le JavaScript, ou bien est il trop "
 "bieux (ce site est testé seulement sur chrome et firefox)"
 
+#: templates/influMainPage.html:102
 msgid "How does that work"
 msgstr "Comment ça marche"
 
+#: templates/influMainPage.html:104
 msgid "There are two kind of buildings"
 msgstr "Il y a deux types de bâtiments"
 
+#: templates/influMainPage.html:104
 msgid "permanent"
 msgstr "les permanents"
 
+#: templates/influMainPage.html:104 templates/influMainPage.html.py:149
 msgid "and"
 msgstr "et"
 
+#: templates/influMainPage.html:104
 msgid "temporary"
 msgstr "les temporaires"
 
+#: templates/influMainPage.html:105
 msgid ""
 "The difference between the two is quite easy to get. Once built, the "
 "permanent will be there until deletion. The temporary will be there once and "
@@ -512,6 +600,7 @@ msgstr ""
 "construit, les permanents le seront jusqu'à suppression. Les temporaires "
 "seront placés une fois et seront encore disponibles pour l'être à nouveau"
 
+#: templates/influMainPage.html:106
 msgid ""
 "A building that you can place has a black background. A permanent and "
 "constructed building will be grey"
@@ -519,15 +608,18 @@ msgstr ""
 "Un bâtiment que vous pouvez construire à un fond noir. Un bâtiment permanent "
 "et construit aura un fond gris"
 
+#: templates/influMainPage.html:107
 msgid ""
 "If you hover over a building with a blue background, you'll see what are the"
 msgstr ""
 "Si vous passez votre souris au dessus d'un bâtiment avec un fond bleu, vous "
 "verrez quels sont ses"
 
+#: templates/influMainPage.html:107
 msgid "prerequisite"
 msgstr "prérequis"
 
+#: templates/influMainPage.html:108
 msgid ""
 "Any building on the build list can be deleted through the click of the red "
 "cross in the top right corner"
@@ -535,9 +627,11 @@ msgstr ""
 "Tout les bâtiments présent dans une ligne de construction peut être supprimé "
 "via un clic sur la croix rouge située dans le coin en haut à droite"
 
+#: templates/influMainPage.html:110
 msgid "What's 'Construction mode'"
 msgstr "Que représente le 'mode construction'"
 
+#: templates/influMainPage.html:112
 msgid ""
 "This mode allows you to put some permanent batiment in a 'already built' "
 "mode. This way, you won't have to place them on the list to access their "
@@ -547,6 +641,7 @@ msgstr ""
 "construits et vous n'aurez pas à les placer sur une liste pour construire "
 "leurs enfants"
 
+#: templates/influMainPage.html:113
 msgid ""
 "In construction mode, you don't need to build buildings one at a time. You "
 "can click on all the permanent buildings and all their ancestors are going "
@@ -556,9 +651,15 @@ msgstr ""
 "par un. Vous pouvez cliquer sur chacun des bâtiments permanents et tout "
 "leurs ancêtres seront alors construit"
 
+#: templates/influMainPage.html:114
+msgid "In construction mode, you can only build permanent buildings"
+msgstr "En mode de construction, seul les bâtiments permanents sont placables"
+
+#: templates/influMainPage.html:117
 msgid "What's represented through"
 msgstr "Quel est le sens de la sortie du bouton"
 
+#: templates/influMainPage.html:119
 msgid ""
 "It's the order you'll have to put the building in if you only have one list "
 "to put all the buildings"
@@ -566,9 +667,11 @@ msgstr ""
 "Cela représente l'ordre dans lequel les bâtiments devront être mis si il y a "
 "une seule file d'attente"
 
+#: templates/influMainPage.html:121
 msgid "How does the deletion work"
 msgstr "Comment marche la suppression"
 
+#: templates/influMainPage.html:123
 msgid ""
 "It shows you the elements that are going to be deleted if you click on the "
 "cross. To get that it proceeds to a simulation of the following"
@@ -577,12 +680,15 @@ msgstr ""
 "jamais vous cliquez. Pour obtenir ces derniers, il procède de la façon "
 "suivante"
 
+#: templates/influMainPage.html:125
 msgid "It suppress the building you have your pointer over"
 msgstr "Simulation de la suppression du bâtiment que vous survolez"
 
+#: templates/influMainPage.html:126
 msgid "And then it removes all it's children if it has some"
 msgstr "S'ensuit la suppression de tout ses enfants, si il en a"
 
+#: templates/influMainPage.html:127
 msgid ""
 "After that it'll move all the element to the left to close the gaps and "
 "check for all the possible new mistakes (e.g. children built before their "
@@ -592,16 +698,46 @@ msgstr ""
 "combler les trous et toutes les erreurs possibles entrainent des "
 "suppressions (par ex. des enfants commencés avant la fin de leur parent)"
 
+#: templates/influMainPage.html:128
 msgid "And it'll do that until it's good"
 msgstr "Et cela est répété jusqu'à ce que la situation soit réalisable"
 
+#: templates/influMainPage.html:131
 msgid "What about the building speeding process"
 msgstr "Et le mécanisme d'accélération de la construction"
 
+#: templates/influMainPage.html:133
 msgid "Yet, I have no idea whatsoever on the way it works in game"
 msgstr ""
 "Je n'ai à l'heure actuelle aucune idée de son fonctionnement dans le jeu"
 
+#: templates/influMainPage.html:135
+msgid "Does this site breaks NDA"
+msgstr "Ce site casse-t-il le NDA"
+
+#: templates/influMainPage.html:137
+msgid "Short answer: No"
+msgstr "En version courte: Non"
+
+#: templates/influMainPage.html:138
+msgid ""
+"The value for levels 4 and 5 are only a guess and set to : 7500 influence / "
+"5 days and 10000 influence / 7 days"
+msgstr ""
+"Les valeurs utilisées pour les niveaux 4 et 5 sont des suppositions. Elles "
+"sont respectivement de 7500 / 5 jour et 10000 influence / 7 jours"
+
+#: templates/influMainPage.html:139
+msgid "All the datas are based on those found in the game beta and on the"
+msgstr ""
+"Toutes les données sont extraites des infos trouvables sur la bêta du jeu et "
+"sur le"
+
+#: templates/influMainPage.html:139
+msgid "Guild Wars 2 Wiki"
+msgstr "wiki de Guild Wars 2"
+
+#: templates/influMainPage.html:142
 msgid ""
 "I have some ideas/remarks/bugs or I'm not happy with some behavior. What do "
 "I do"
@@ -609,9 +745,11 @@ msgstr ""
 "J'ai quelques idées/remarques/bugs ou bien je ne suis pas satisfait du "
 "comportement du site. Que fais-je"
 
+#: templates/influMainPage.html:144
 msgid "Just use the contact form, it's here for that"
 msgstr "Utilisez le formulaire de contact, il est là pour ça"
 
+#: templates/influMainPage.html:145
 msgid ""
 " Also note that I'm doing that for free, on my spare time. Hence I might not "
 "answer (or correct the bugs) quickly"
@@ -619,26 +757,34 @@ msgstr ""
 "Petite remarque, je fais cela gratuitement et sur mon temps libre. De ce "
 "fait, il est possible que je ne réponde pas rapidement"
 
+#: templates/influMainPage.html:147
 msgid "What are you using to run this website"
 msgstr "Qu'est ce que tu utilises pour faire tourner ce site"
 
+#: templates/influMainPage.html:149
 msgid "It's powered by"
 msgstr "Cela marche grâce à"
 
+#: templates/influMainPage.html:151
 msgid "What languages are available"
 msgstr "Dans quelles langues ce site est il disponible"
 
+#: templates/influMainPage.html:153
 msgid "So far, only english and french. And that rely on your browser's locale"
 msgstr ""
 "À ce jour, seulement anglais et français. Et la langue choisie est "
 "déterminée par les réglages du navigateur."
 
+#: templates/influMainPage.html:154
 msgid ""
 "You're welcome if you want to provide another language translation. I can "
 "provide easily a list of sentence to be translated"
 msgstr ""
 "Si vous vouliez traduire ce site dans un autre langage, vous êtes les "
 "bienvenus. Je peux aisément produire une liste des phrases à traduire."
+
+#~ msgid "Some side notes"
+#~ msgstr "Quelques notes"
 
 #~ msgid "+10% Influence for 3 Days"
 #~ msgstr "+10% d'Influence pour 3 jours"
@@ -651,7 +797,20 @@ msgstr ""
 
 #~ msgid "+5% Exp from Events for 3 Days"
 #~ msgstr "+5% Exp des Événements sur 3 jours"
+#~ msgid ""
+#~ "For 12 Hrs, any fortification held by your guild in World Vs World will "
+#~ "give karma to defending allies for each kill near the fort. Lasts 12 "
+#~ "hours."
+#~ msgstr ""
+#~ "Pendant 12 heures, toute fortification tenu par votre guilde en Monde "
+#~ "contre Monde octroie du karma aux alliés en défense pour tout ennemi tué "
+#~ "près du fort."
 
+#~ msgid ""
+#~ "For 3 days, your guild receives and additional 5% karma from all events."
+#~ msgstr ""
+#~ "Pendant 3 jours, votre guilde reçoit 5% de Karma en plus de tous les "
+#~ "évènements."
 # ##############################
 msgid "Politics"
 msgstr "Politique"
@@ -730,20 +889,7 @@ msgstr "Economie Niveau 5"
 msgid "Architecture Level 5"
 msgstr "Architecture Niveau 5"
 
-#~ msgid ""
-#~ "For 12 Hrs, any fortification held by your guild in World Vs World will "
-#~ "give karma to defending allies for each kill near the fort. Lasts 12 "
-#~ "hours."
-#~ msgstr ""
-#~ "Pendant 12 heures, toute fortification tenu par votre guilde en Monde "
-#~ "contre Monde octroie du karma aux alliés en défense pour tout ennemi tué "
-#~ "près du fort."
 
-#~ msgid ""
-#~ "For 3 days, your guild receives and additional 5% karma from all events."
-#~ msgstr ""
-#~ "Pendant 3 jours, votre guilde reçoit 5% de Karma en plus de tous les "
-#~ "évènements."
 
 # ##############################
 msgid "Increase your guild's skill in Politics to Level 1"
