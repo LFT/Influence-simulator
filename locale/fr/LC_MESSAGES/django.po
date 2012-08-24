@@ -537,8 +537,8 @@ msgid "You need me for that thing"
 msgstr "Je suis requis pour cela"
 
 #: templates/influMainPage.html:88
-msgid "Website made by Pierre-Yves Cladière. Anyone is free to use it."
-msgstr "Site réalisé par Pierre-Yves Cladière. Tout le monde est libre de l'utiliser."
+msgid "Website made by La Folie (aka LFT). Anyone is free to use it."
+msgstr "Site réalisé par La Folie (aussi connu comme LFT). Tout le monde est libre de l'utiliser."
 
 #: templates/influMainPage.html:92
 msgid "What's the use of this website"
